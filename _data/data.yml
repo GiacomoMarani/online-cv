@@ -23,19 +23,19 @@ education:
       systems with penetration of renewable energy'''
     time: April 2014
     university: University of Pisa, Italy
-  title: Education
+  - degree: Professional Engineering Qualification
+    details: null
+    time: February 2019
+    university: Order of Engineers of the Province of Pisa
+  title: Education & Qualifications
 footer: Designed with <i class="fas fa-heart"></i> by Giacomo Marani
 sidebar:
   about: true
   avatar: profile.png
-  bitbucket: null
   citizenship: Italian
-  codewars: null
   education: true
   email: Ing.giacomo.marani@gmail.com
-  github: null
-  gitlab: null
-  goodreads: null
+  github: giacomomarani
   interests:
     info:
     - item: Cinema
@@ -50,20 +50,15 @@ sidebar:
   languages:
     info:
     - idiom: English
-      level: Base
+      level: Basic
     title: Languages
-  linkedin: null
+  linkedin: giacomo-marani
   name: Giacomo Marani
-  pdf: null
   phone: +39 333 8346294
   position: right
-  stack-overflow: null
   tagline: Energy Engineer
-  telegram: null
   timezone: Europe/Rome
-  twitter: null
-  website: null
-  xing: null
+  website: http://SoBigData.eu
 skills:
   title: Skills & Proficiency
   toolset:
@@ -118,4 +113,11 @@ work-experience:
       (Revit) of HVAC systems and creation of energy analysis model.'
     position: Executive Engineer
     time: February 2022 - June 2024
+  - company: Other Engineering Firms
+    details: '- Participation in various energy and engineering projects focusing
+      on sustainability and efficiency improvements.
+
+      - Developed early skills in data analysis, energy modeling, and BIM technologies.'
+    position: Junior Engineer
+    time: Before 2022
   title: Work Experience
