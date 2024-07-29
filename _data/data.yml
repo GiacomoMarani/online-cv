@@ -8,8 +8,8 @@ sidebar:
     education: True # set to False if you want education in main section instead of in sidebar
 
     # Profile information
-    name: Cpt. R&D
-    tagline: Full Stack Developer
+    name: Giacomo Marani
+    tagline: Energy Engineer
     avatar: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
     # Sidebar links
@@ -33,14 +33,12 @@ sidebar:
     languages:
       title: Languages
       info:
-        - idiom: English
+        - idiom: Italian
           level: Native
 
-        - idiom: French
+        - idiom: English
           level: Professional
 
-        - idiom: Spanish
-          level: Professional
 
     interests:
       title: Interests
@@ -57,12 +55,14 @@ sidebar:
 career-profile:
     title: Career Profile
     summary: |
-      Summarise your career here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. You can [download this free resume/CV template here]().
-      Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque
-      penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-      Donec quam felis, ultricies nec, pellentesque eu.
-      Second paragraph if required.
+          I have extensive experience in energy engineering, advanced data management, and BIM methodology,
+          enabling me to optimize project workflows and enhance interdisciplinary coordination. My expertise
+          in energy modeling, achieving LEED certifications, and participating in European sustainability projects
+          demonstrates my commitment to environmentally responsible practices. I possess advanced skills in software
+          tools like Revit, DesignBuilder, EnergyPlus, Excel, and PowerBI, along with a basic familiarity with programming
+          languages such as Python and Git. Eager to take on new challenges, I aim to elevate the design process to the
+          next level by leveraging projects as comprehensive data repositories. This will maximize the potential of AI and
+          ML, driving innovative solutions and efficiencies in engineering and construction.
 education:
     title: Education
     info:
