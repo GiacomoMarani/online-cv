@@ -1,190 +1,164 @@
-#
-# Be aware that even a small syntax error here can lead to failures in output.
-#
-
 sidebar:
-    position: right # position of the sidebar : left or right
-    about: True # set to False or comment line if you want to remove the "how to use?" in the sidebar
-    education: True # set to False if you want education in main section instead of in sidebar
+  position: right
+  about: true
+  education: true
 
-    # Profile information
-    name: Giacomo Marani
-    tagline: Energy Engineer
-    avatar: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+  # Profile information
+  name: "Giacomo Marani"
+  tagline: "Energy Engineer"
+  avatar: "profile.png"
 
-    # Sidebar links
-    email: Ing.giacomo.marani@gmail.com
-    phone: +39 333 8346294
-    linkedin: giacomo-marani-3a4532121
+  # Sidebar links
+  email: "Ing.giacomo.marani@gmail.com"
+  phone: "+39 333 8346294"
+  linkedin: "giacomo-marani-3a4532121"
 
-    languages:
-      title: Languages
-      info:
-        - idiom: Italian
-          level: Native
+  languages:
+    title: "Languages"
+    info:
+      - idiom: "Italian"
+        level: "Native"
+      - idiom: "English"
+        level: "Intermediate"
 
-        - idiom: English
-          level: Intermediate
-
-
-    interests:
-      title: Interests
-      info:
-        - item: Problem solving
-          link:
-
-        - item: Team working
-          link:
-
-        - item: Analytical thinking
-          link:
-
-        - item: Cinema and music
-          link:
-
-        - item: Sports
-          link:
-
-        - item: Philosophy
-          link:
+  interests:
+    title: "Interests"
+    info:
+      - item: "Problem solving"
+        link: ""
+      - item: "Team working"
+        link: ""
+      - item: "Analytical thinking"
+        link: ""
+      - item: "Cinema and music"
+        link: ""
+      - item: "Sports"
+        link: ""
+      - item: "Philosophy"
+        link: ""
 
 career-profile:
-    title: Career Profile
-    summary: |
-          I am an energy engineer with a strong passion for technological innovation and artificial intelligence applied to the
-          architecture, engineering, and construction (AEC) industry. I currently serve as Lead R&D at ATI Project, where I lead
-          the development of data-driven solutions, automated workflows, and predictive algorithms to support sustainable
-          design and operational efficiency in buildings.
-          After earning my master’s degree in Energy Engineering from the University of Pisa, I gained extensive international
-          experience, contributing to high-profile projects such as the New Bispebjerg Hospital in Copenhagen and the New
-          Odense University Hospital in Denmark. My work focuses on integrating BIM modeling with advanced energy
-          simulations, leveraging tools like Revit, DesignBuilder (EnergyPlus), and programming languages such as Python to
-          drive automation and data analysis.
-          I have been involved in European initiatives like BIM4REN (Horizon 2020), aimed at enhancing the energy retrofit of
-          existing buildings through digital methodologies. I also collaborate with leading research institutions such as the
-          Scuola Normale Superiore and the Italian National Research Council (CNR) within the SoBigData project, promoting
-          the use of big data and artificial intelligence for urban and environmental analysis.
-          As a firm believer in interdisciplinary collaboration, I work at the intersection of technology and design, fostering an
-          integrated approach where architects, engineers, and data scientists come together to tackle the challenges of
-          sustainability and digital innovation in the construction industry. I envision a future where architectural design is
-          increasingly data-driven, inclusive, efficient, and resilient.
-          I ensure technological monitoring, experimentation, and solution design to drive innovation at the intersection of
-          architecture, engineering, and artificial intelligence. By leveraging data-driven design, I focus on bridging Building
-          Information Modeling (BIM) and Building Energy Modeling (BEM) to optimize performance and sustainability.
-          Knowledge sharing is at the core of my work, fostering collaboration and advancing the use of AI and generative tools
-          for smarter, future-ready designs.
+  title: "Career Profile"
+  summary: |
+    I am an energy engineer with a strong passion for technological innovation and artificial intelligence applied to the
+    architecture, engineering, and construction (AEC) industry. I currently serve as Lead R&D at ATI Project, where I lead
+    the development of data-driven solutions, automated workflows, and predictive algorithms to support sustainable
+    design and operational efficiency in buildings.
+    After earning my master’s degree in Energy Engineering from the University of Pisa, I gained extensive international
+    experience, contributing to high-profile projects such as the New Bispebjerg Hospital in Copenhagen and the New
+    Odense University Hospital in Denmark. My work focuses on integrating BIM modeling with advanced energy
+    simulations, leveraging tools like Revit, DesignBuilder (EnergyPlus), and programming languages such as Python to
+    drive automation and data analysis.
+    I have been involved in European initiatives like BIM4REN (Horizon 2020), aimed at enhancing the energy retrofit of
+    existing buildings through digital methodologies. I also collaborate with leading research institutions such as the
+    Scuola Normale Superiore and the Italian National Research Council (CNR) within the SoBigData project, promoting
+    the use of big data and artificial intelligence for urban and environmental analysis.
+    As a firm believer in interdisciplinary collaboration, I work at the intersection of technology and design, fostering an
+    integrated approach where architects, engineers, and data scientists come together to tackle the challenges of
+    sustainability and digital innovation in the construction industry. I envision a future where architectural design is
+    increasingly data-driven, inclusive, efficient, and resilient.
+    I ensure technological monitoring, experimentation, and solution design to drive innovation at the intersection of
+    architecture, engineering, and artificial intelligence. By leveraging data-driven design, I focus on bridging Building
+    Information Modeling (BIM) and Building Energy Modeling (BEM) to optimize performance and sustainability.
+    Knowledge sharing is at the core of my work, fostering collaboration and advancing the use of AI and generative tools
+    for smarter, future-ready designs.
+
 education:
-    title: Education, Training & Qualifications
-    info:
-      - degree: Professional Engineering Qualification in Industrial Engineering
-        university: Order of Engineers of the Province of Pisa
-        time: Feb 2019
-        details: |
-          
-      - degree: MSc in Energy Engineering
-        university: University of Pisa, Italy
-        time: Apr 2018
-        details: |
-          Dissertation: “BIM-BPS INTEROPERABILITY SCHEMES: CONTROL OF IAQ IN A SCHOOL CLASSROOM THROUGH DCV-CO2 BASED”
-      - degree: BEng in Energy Engineering
-        university: University of Pisa, Italy
-        time: Sep 2014 - Apr 2014
-        details: |
-          Dissertation: “Analysis and comparison of tools for complex energy systems with penetration of renewable energy”
+  title: "Education, Training & Qualifications"
+  info:
+    - degree: "Professional Engineering Qualification in Industrial Engineering"
+      university: "Order of Engineers of the Province of Pisa"
+      time: "Feb 2019"
+      details: ""
+    - degree: "MSc in Energy Engineering"
+      university: "University of Pisa, Italy"
+      time: "Apr 2018"
+      details: |
+        Dissertation: "BIM-BPS INTEROPERABILITY SCHEMES: CONTROL OF IAQ IN A SCHOOL CLASSROOM THROUGH DCV-CO2 BASED"
+    - degree: "BEng in Energy Engineering"
+      university: "University of Pisa, Italy"
+      time: "Sep 2014 - Apr 2014"
+      details: |
+        Dissertation: "Analysis and comparison of tools for complex energy systems with penetration of renewable energy"
 
 experiences:
-    title: Work Experiences
-    info:
-      - role: Lead R&D Engineer
-        time: Jan 2025 - Present
-        company: ATI project Srl Design, engineering and architecture studio, Pisa, Italy
-        details: |
-          Focused on integrating advanced data management techniques within BIM to optimize project workflows and enhance interdisciplinary coordination.
-          - Data Management and Research Platforms: Developed and managed company server research platforms using PowerBi dashboards for knowledge tracking. Advanced Excel skills for data extraction from documents, task automation, and SQL database exploration.
-          - Challenge US 2023 - SoBigData.eu: Participated in and won a PoC project titled "Data-Driven Decision Making for Sustainable Construction and Resource Optimization." Developed a big data tool for informed decisions in sustainable construction using BIM files, resource usage, cost information, and environmental impact assessments. Integrated into the BIM workflow for architects, engineers, and contractors, promoting environmentally responsible practices aligned with the EU Green Deal and Horizon 2030/2050 objectives.
-          - BIM Data Management: Specialized in processing and interpreting data within the BIM methodology, managing data for complex building models up to 250,000 sqm with over 10,000 rooms. Coordinated data management across various disciplines, automating checks and validations, and creating dashboards and tools to enhance data accessibility and decision-making processes.
-      - role: Executive Engineer
-        time: Feb 2023 - Jan 2025
-        company: ATI project Srl Design, engineering and architecture studio, Pisa, Italy
-        details: |
-          Design in the field of plant engineering and energy certification, works carried out:
-          - Silva Mountain Resort - Migenwald, Germany: Heating & Cooling loads calculations with Revit / DesignBuilder (EnergyPlus), according to DIN V 18599-2
-          - New Hospital Bispebjerg in the City of Copenhagen: Heating & Cooling loads calculations with Revit / DesignBuilder (EnergyPlus), according to the Danish Building Regulations 2015 (BR15)
-          - New University Hospital in Odense: Design and data analysis in the BIM field (Revit) of HVAC systems and creation of energy analysis model.
-      - role: Energy Engineer
-        time: May 2018 - Feb 2023
-        company: ATI project Srl Design, engineering and architecture studio, Pisa, Italy
-        details: |
-          Design in the field of plant engineering and energy certification, works carried out:
-          - Proposal implementation and European tender development: BIM4REN is a project funded by H2020 that involves 23 partners spread across 10 countries for a series of 4-year developments on the exploitation of the BIM potential for the energy renovation of existing buildings for the entire chain of value of the building.
-          - Umberto Forti Headquarters - LEED GOLD CERTIFICATION
-          - Lamarmora School - LEED PLATINUM CERTIFICATION: Energy modelling in DesignBuilder for certification and submission of LEED EA requirements.
+  title: "Work Experiences"
+  info:
+    - role: "Lead R&D Engineer"
+      time: "Jan 2025 - Present"
+      company: "ATI project Srl Design, engineering and architecture studio, Pisa, Italy"
+      details: |
+        Focused on integrating advanced data management techniques within BIM to optimize project workflows and enhance interdisciplinary coordination.
+        - Data Management and Research Platforms: Developed and managed company server research platforms using PowerBi dashboards for knowledge tracking. Advanced Excel skills for data extraction from documents, task automation, and SQL database exploration.
+        - Challenge US 2023 - SoBigData.eu: Participated in and won a PoC project titled "Data-Driven Decision Making for Sustainable Construction and Resource Optimization." Developed a big data tool for informed decisions in sustainable construction using BIM files, resource usage, cost information, and environmental impact assessments. Integrated into the BIM workflow for architects, engineers, and contractors, promoting environmentally responsible practices aligned with the EU Green Deal and Horizon 2030/2050 objectives.
+        - BIM Data Management: Specialized in processing and interpreting data within the BIM methodology, managing data for complex building models up to 250,000 sqm with over 10,000 rooms. Coordinated data management across various disciplines, automating checks and validations, and creating dashboards and tools to enhance data accessibility and decision-making processes.
+    - role: "Executive Engineer"
+      time: "Feb 2023 - Jan 2025"
+      company: "ATI project Srl Design, engineering and architecture studio, Pisa, Italy"
+      details: |
+        Design in the field of plant engineering and energy certification, works carried out:
+        - Silva Mountain Resort - Migenwald, Germany: Heating & Cooling loads calculations with Revit / DesignBuilder (EnergyPlus), according to DIN V 18599-2
+        - New Hospital Bispebjerg in the City of Copenhagen: Heating & Cooling loads calculations with Revit / DesignBuilder (EnergyPlus), according to the Danish Building Regulations 2015 (BR15)
+        - New University Hospital in Odense: Design and data analysis in the BIM field (Revit) of HVAC systems and creation of energy analysis model.
+    - role: "Energy Engineer"
+      time: "May 2018 - Feb 2023"
+      company: "ATI project Srl Design, engineering and architecture studio, Pisa, Italy"
+      details: |
+        Design in the field of plant engineering and energy certification, works carried out:
+        - Proposal implementation and European tender development: BIM4REN is a project funded by H2020 that involves 23 partners spread across 10 countries for a series of 4-year developments on the exploitation of the BIM potential for the energy renovation of existing buildings for the entire chain of value of the building.
+        - Umberto Forti Headquarters - LEED GOLD CERTIFICATION
+        - Lamarmora School - LEED PLATINUM CERTIFICATION: Energy modelling in DesignBuilder for certification and submission of LEED EA requirements.
 
 projects:
-    title: Projects
-    intro: >
-      Here are some of my projects and initiatives.
-    assignments:
-      - title: Machine Learning application on Life Cycle Assessment
-        link: "https://atiproject.com/en/current-topics/machine-learning-application-on-life-cycle-assessment/"
-        tagline: |
-          Placeholder tagline for testing.
-      - title: Why AI Needs Human Judgment For Better Design Decisions
-        link: "https://www.reope.com/bimagination/why-ai-needs-human-judgment-for-better-design-decisions"
-        tagline: |
-          Leveraging own data to drive more meaningful analysis and informed design decisions.
-
-      - title: ATI Project: Digital and Sustainable Initiative
-        link: "https://atiproject.com/en/current-topics/progetto-ati-project-digitale-e-sostenibile/"
-        tagline: |
-          Innovation and Sustainability supported by the co-financing received through the “Digital Enterprise” call under the Tuscany Regional Programme ERDF 2021–2027.
-
-      - title: ATI Project Export 2024 Project
-        link: "https://atiproject.com/en/current-topics/ati-project-export-2024/"
-        tagline: |
-          A Step Forward in Digital Innovation and Internationalization, co-financing obtained under the Internationalization Grant, promoted by the Tuscany Regional Program – ERDF 2021–2027.
-      
-      - title: BIM4REN Project
-        link: "https://bim4ren.eu/"
-        tagline: |
-          A Horizon 2020 project focused on exploiting BIM potential for energy renovation of existing buildings.
+  title: "Projects"
+  intro: "Here are some of my projects and initiatives."
+  assignments:
+    - title: "Machine Learning application on Life Cycle Assessment"
+      link: "https://atiproject.com/en/current-topics/machine-learning-application-on-life-cycle-assessment/"
+      tagline: "Placeholder tagline for testing."
+    - title: "Why AI Needs Human Judgment For Better Design Decisions"
+      link: "https://www.reope.com/bimagination/why-ai-needs-human-judgment-for-better-design-decisions"
+      tagline: |
+        Leveraging own data to drive more meaningful analysis and informed design decisions.
+    - title: "ATI Project: Digital and Sustainable Initiative"
+      link: "https://atiproject.com/en/current-topics/progetto-ati-project-digitale-e-sostenibile/"
+      tagline: |
+        Innovation and Sustainability supported by the co-financing received through the “Digital Enterprise” call under the Tuscany Regional Programme ERDF 2021–2027.
+    - title: "ATI Project Export 2024 Project"
+      link: "https://atiproject.com/en/current-topics/ati-project-export-2024/"
+      tagline: |
+        A Step Forward in Digital Innovation and Internationalization, co-financing obtained under the Internationalization Grant, promoted by the Tuscany Regional Program – ERDF 2021–2027.
+    - title: "BIM4REN Project"
+      link: "https://bim4ren.eu/"
+      tagline: |
+        A Horizon 2020 project focused on exploiting BIM potential for energy renovation of existing buildings.
 
 skills:
-    title: Languages & IT Skills
-
-    toolset:
-      - name: Autodesk Revit
-        level: Advanced
-
-      - name: pyRevit
-        level: Base
-
-      - name: DesignBuilder
-        level: Advanced
-
-      - name: Energyplus
-        level: Base
-
-      - name: Excel
-        level: Advanced
-
-      - name: PowerBI
-        level: Advanced
-
-      - name: M
-        level: Base
-
-      - name: Python
-        level: Base
-
-      - name: Git
-        level: Base
-
-      - name: HTML
-        level: Base
-
-      - name: CSS
-        level: Base
+  title: "Languages & IT Skills"
+  toolset:
+    - name: "Autodesk Revit"
+      level: "Advanced"
+    - name: "pyRevit"
+      level: "Base"
+    - name: "DesignBuilder"
+      level: "Advanced"
+    - name: "EnergyPlus"
+      level: "Base"
+    - name: "Excel"
+      level: "Advanced"
+    - name: "PowerBI"
+      level: "Advanced"
+    - name: "M"
+      level: "Base"
+    - name: "Python"
+      level: "Base"
+    - name: "Git"
+      level: "Base"
+    - name: "HTML"
+      level: "Base"
+    - name: "CSS"
+      level: "Base"
 
 footer: >
-    Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
+  Designed with <i class="fas fa-heart"></i> by
+  <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
