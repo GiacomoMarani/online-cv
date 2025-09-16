@@ -64,6 +64,10 @@ career-profile:
           existing buildings through digital methodologies. I also collaborate with leading research institutions such as the
           Scuola Normale Superiore and the Italian National Research Council (CNR) within the SoBigData project, promoting
           the use of big data and artificial intelligence for urban and environmental analysis.
+          As a firm believer in interdisciplinary collaboration, I work at the intersection of technology and design, fostering an
+          integrated approach where architects, engineers, and data scientists come together to tackle the challenges of
+          sustainability and digital innovation in the construction industry. I envision a future where architectural design is
+          increasingly data-driven, inclusive, efficient, and resilient.
           I ensure technological monitoring, experimentation, and solution design to drive innovation at the intersection of
           architecture, engineering, and artificial intelligence. By leveraging data-driven design, I focus on bridging Building
           Information Modeling (BIM) and Building Energy Modeling (BEM) to optimize performance and sustainability.
@@ -116,7 +120,6 @@ experiences:
           - Umberto Forti Headquarters - LEED GOLD CERTIFICATION
           - Lamarmora School - LEED PLATINUM CERTIFICATION: Energy modelling in DesignBuilder for certification and submission of LEED EA requirements.
 
-
 projects:
     title: Projects
     intro: >
@@ -141,27 +144,6 @@ projects:
       - title: BIM4REN Project
         link: "https://bim4ren.eu/"
         tagline: "A Horizon 2020 project focused on exploiting BIM potential for energy renovation of existing buildings."
-
-
-publications:
-    title: Publications
-    intro: |
-      Here are some of my publications and articles.
-    papers:
-      - title: Applicazione del Machine Learning al Life Cycle Assessment
-        link: "https://atiproject.com/attualita/applicazione-del-machine-learning-al-life-cycle-assessment/"
-        authors: Giacomo Marani
-        conference: ATI Project News
-
-      - title:  Why AI Needs Human Judgment For Better Design Decisions
-        link: "https://atiproject.com/en/news/ati-project-as-case-study/"
-        authors: Giacomo Marani
-        conference: ATI Project News
-
-      - title: ATI Project Export 2024
-        link: "https://atiproject.com/attualita/ati-project-export-2024/"
-        authors: Giacomo Marani
-        conference: ATI Project News
 
 skills:
     title: Languages & IT Skills
