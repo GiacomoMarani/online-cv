@@ -127,23 +127,28 @@ projects:
     assignments:
       - title: Machine Learning application on Life Cycle Assessment
         link: "https://atiproject.com/en/current-topics/machine-learning-application-on-life-cycle-assessment/"
-        tagline: "Modern architecture stands at a crossroads, where the need to build sustainably is hampered by traditional design methodologies. In this context, the integration of Machine Learning (ML) into Life Cycle Assessment (LCA) emerges as a revolution, providing a fresh perspective on handling design data."
+        tagline: |
+          Modern architecture stands at a crossroads, where the need to build sustainably is hampered by traditional design methodologies. In this context, the integration of Machine Learning (ML) into Life Cycle Assessment (LCA) emerges as a revolution, providing a fresh perspective on handling design data.
         
       - title: Why AI Needs Human Judgment For Better Design Decisions
         link: "https://www.reope.com/bimagination/why-ai-needs-human-judgment-for-better-design-decisions"
-        tagline: "Leveraging own data to drive more meaningful analysis and informed design decisions."
+        tagline: |
+          Leveraging own data to drive more meaningful analysis and informed design decisions.
 
       - title: ATI Project: Digital and Sustainable Initiative
         link: "https://atiproject.com/en/current-topics/progetto-ati-project-digitale-e-sostenibile/"
-        tagline: "Innovation and Sustainability supported by the co-financing received through the “Digital Enterprise” call under the Tuscany Regional Programme ERDF 2021–2027."
+        tagline: |
+          Innovation and Sustainability supported by the co-financing received through the “Digital Enterprise” call under the Tuscany Regional Programme ERDF 2021–2027.
 
       - title: ATI Project Export 2024 Project
         link: "https://atiproject.com/en/current-topics/ati-project-export-2024/"
-        tagline: "A Step Forward in Digital Innovation and Internationalization, co-financing obtained under the Internationalization Grant, promoted by the Tuscany Regional Program – ERDF 2021–2027."
+        tagline: |
+          A Step Forward in Digital Innovation and Internationalization, co-financing obtained under the Internationalization Grant, promoted by the Tuscany Regional Program – ERDF 2021–2027.
       
       - title: BIM4REN Project
         link: "https://bim4ren.eu/"
-        tagline: "A Horizon 2020 project focused on exploiting BIM potential for energy renovation of existing buildings."
+        tagline: |
+          A Horizon 2020 project focused on exploiting BIM potential for energy renovation of existing buildings.
 
 skills:
     title: Languages & IT Skills
