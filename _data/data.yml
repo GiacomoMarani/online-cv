@@ -24,15 +24,11 @@ sidebar:
   interests:
     title: "Interests"
     info:
-      - item: "Problem solving"
-        link: ""
-      - item: "Team working"
-        link: ""
-      - item: "Analytical thinking"
+      - item: "Technology and Innovation"
         link: ""
       - item: "Cinema and music"
         link: ""
-      - item: "Sports"
+      - item: "Strategy Games"
         link: ""
       - item: "Philosophy"
         link: ""
@@ -134,17 +130,19 @@ projects:
         A Horizon 2020 project focused on exploiting BIM potential for energy renovation of existing buildings.
 
 skills:
-  title: "Languages & IT Skills"
+  title: "Skills &amp; Proficiency"
   toolset:
-    - name: "Excel"
+    - name: "Data Analysis"
       level: 98%
-    - name: "PowerBI"
+    - name: "Problem-Solving"
+      level: 98%
+    - name: "Excel & PowerBI"
       level: 98%
     - name: "M"
       level: 98%
     - name: "Python"
       level: 78%
-    - name: "Autodesk Revit"
+    - name: "SQL"
       level: 80%
     - name: "pyRevit"
       level: 50%
