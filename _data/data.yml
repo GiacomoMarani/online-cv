@@ -136,28 +136,28 @@ projects:
 skills:
   title: "Languages & IT Skills"
   toolset:
-    - name: "Autodesk Revit"
-      level: "Advanced"
-    - name: "pyRevit"
-      level: "Base"
-    - name: "DesignBuilder"
-      level: "Advanced"
-    - name: "EnergyPlus"
-      level: "Base"
     - name: "Excel"
-      level: "Advanced"
+      level: 98%
     - name: "PowerBI"
-      level: "Advanced"
+      level: 98%
     - name: "M"
-      level: "Base"
+      level: 98%
     - name: "Python"
-      level: "Base"
+      level: 78%
+    - name: "Autodesk Revit"
+      level: 80%
+    - name: "pyRevit"
+      level: 50%
+    - name: "DesignBuilder"
+      level: 80%
+    - name: "EnergyPlus"
+      level: 70%
     - name: "Git"
-      level: "Base"
+      level: 50%
     - name: "HTML"
-      level: "Base"
+      level: 40%
     - name: "CSS"
-      level: "Base"
+      level: 40%
 
 footer: >
   DM on 
