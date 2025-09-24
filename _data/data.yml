@@ -77,7 +77,7 @@ education:
 experiences:
   title: "Work Experiences"
   info:
-    - role: "Lead R&D Engineer"
+    - role: "R&D Lead Engineer"
       time: "Present"
       company: "ATI project Srl Design, engineering and architecture studio, Pisa, Italy"
       details: |
