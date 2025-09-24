@@ -84,16 +84,18 @@ experiences:
       time: "Present"
       company: "ATI project Srl Design, engineering and architecture studio, Pisa, Italy"
       details: |
-        - Leading research & innovation initiatives with focus on AI, automation, and data analytics for sustainable design and digital transformation.
-        - Definition of innovation roadmaps and monitoring of KPI frameworks to align with business and ESG objectives.
-        - Stakeholder engagement: collaboration with universities, research centers, and public institutions on funded projects.
-        - Training and workshops to foster an innovation culture within the organization.
-        - Key results: reduced building energy analysis time by >30% through workflow automation; enhanced predictive model accuracy; developed AI prototypes for early-stage sustainability evaluation. |
-        |
-       Focused on integrating advanced data management techniques within BIM to optimize project workflows and enhance interdisciplinary coordination.
-        - Data Management and Research Platforms: Developed and managed company server research platforms using PowerBi dashboards for knowledge tracking. Advanced Excel skills for data extraction from documents, task automation, and SQL database exploration.
-        - Challenge US 2023 - SoBigData.eu: Participated in and won a PoC project titled "Data-Driven Decision Making for Sustainable Construction and Resource Optimization." Developed a big data tool for informed decisions in sustainable construction using BIM files, resource usage, cost information, and environmental impact assessments. Integrated into the BIM workflow for architects, engineers, and contractors, promoting environmentally responsible practices aligned with the EU Green Deal and Horizon 2030/2050 objectives.
-        - BIM Data Management: Specialized in processing and interpreting data within the BIM methodology, managing data for complex building models up to 250,000 sqm with over 10,000 rooms. Coordinated data management across various disciplines, automating checks and validations, and creating dashboards and tools to enhance data accessibility and decision-making processes.
+       details: |
+  - Leading research & innovation initiatives with focus on AI, automation, and data analytics for sustainable design and digital transformation.
+  - Definition of innovation roadmaps and monitoring of KPI frameworks to align with business and ESG objectives.
+  - Stakeholder engagement: collaboration with universities, research centers, and public institutions on funded projects.
+  - Training and workshops to foster an innovation culture within the organization.
+  - Key results: reduced building energy analysis time by >30% through workflow automation; enhanced predictive model accuracy; developed AI prototypes for early-stage sustainability evaluation.
+
+  Focused on integrating advanced data management techniques within BIM to optimize project workflows and enhance interdisciplinary coordination.
+  - Data Management and Research Platforms: Developed and managed company server research platforms using Power BI dashboards for knowledge tracking. Advanced Excel skills for data extraction from documents, task automation, and SQL database exploration.
+  - Challenge US 2023 - SoBigData.eu: Participated in and won a PoC project titled "Data-Driven Decision Making for Sustainable Construction and Resource Optimization." Developed a big data tool for informed decisions in sustainable construction using BIM files, resource usage, cost information, and environmental impact assessments. Integrated into the BIM workflow for architects, engineers, and contractors, promoting environmentally responsible practices aligned with the EU Green Deal and Horizon 2030/2050 objectives.
+  - BIM Data Management: Specialized in processing and interpreting data within the BIM methodology, managing data for complex building models up to 250,000 sqm with over 10,000 rooms. Coordinated data management across various disciplines, automating checks and validations, and creating dashboards and tools to enhance data accessibility and decision-making processes.
+
     - role: "Executive Engineer"
       time: "Feb 2023"
       company: "ATI project Srl Design, engineering and architecture studio, Pisa, Italy"
