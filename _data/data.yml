@@ -113,6 +113,12 @@ projects:
   title: "Projects"
   intro: "Here are some of my projects and initiatives."
   assignments:
+    - title: "Tender AI Assistant"
+      link: "https://tender-ai-assistant.vercel.app/"
+      tagline: "Project website."
+    - title: "AI Things"
+      link: "https://giacomomarani.github.io/AI-THINGS/"
+      tagline: "Project website."
     - title: "Machine Learning application on Life Cycle Assessment"
       link: "https://atiproject.com/en/current-topics/machine-learning-application-on-life-cycle-assessment/"
       tagline: "Applied ML models to BIM and energy datasets to predict environmental impacts in early design stages, enabling sustainable choices and reducing late-stage changes."
