@@ -5,8 +5,8 @@ sidebar:
 
   # Profile information
   name: "Giacomo Marani"
-  tagline: "Energy Engineer"
-  avatar: "profile.png"
+  tagline: "Generative AI Leader | R&D Lead Engineer"
+  avatar: "profile.jpg"
 
   # Sidebar links
   email: "Ing.giacomo.marani@gmail.com"
@@ -36,6 +36,9 @@ sidebar:
 career-profile:
   title: "Career Profile"
   summary: |
+    Generative AI Leader and R&D Lead Engineer focused on turning generative AI capabilities into business use cases, prototypes, and operational workflows. I connect stakeholder needs with responsible AI adoption, data strategy, prompt engineering, model-output evaluation, and measurable KPIs.
+    I develop AI-driven tools and knowledge platforms that support tender analysis, AI learning, prompt design, BIM/BEM workflows, and sustainability decision-making.
+
     R&D Lead Engineer with 3+ years of experience in driving AI, digital transformation, and sustainability initiatives in engineering, architecture, and energy domains. Specialized in developing data-driven workflows, managing innovation projects, and aligning technological development with business and ESG goals. Proven ability to support portfolio governance, KPI tracking, and stakeholder collaboration.
     After earning my master’s degree in Energy Engineering from the University of Pisa, I gained extensive international
     experience, contributing to high-profile projects such as the New Bispebjerg Hospital in Copenhagen and the New
@@ -81,7 +84,7 @@ experiences:
       time: "Present"
       company: "ATI project Srl Design, engineering and architecture studio, Pisa, Italy"
       details: |
-        - Leading research & innovation initiatives with focus on AI, automation, and data analytics for sustainable design and digital transformation.
+        - Leading research & innovation initiatives with focus on generative AI, automation, and data analytics for sustainable design and digital transformation.
         - Definition of innovation roadmaps and monitoring of KPI frameworks to align with business and ESG objectives.
         - Stakeholder engagement: collaboration with universities, research centers, and public institutions on funded projects.
         - Training and workshops to foster an innovation culture within the organization.
@@ -113,6 +116,15 @@ projects:
   title: "Projects"
   intro: "Here are some of my projects and initiatives."
   assignments:
+    - title: "Tender AI Pro"
+      link: "https://tender-ai-pro.onrender.com/"
+      tagline: "Generative AI web app for tender analysis, requirement extraction, and proposal support."
+    - title: "AI Things Beta"
+      link: "https://ai-things-beta.vercel.app/"
+      tagline: "Interactive web platform for learning and exploring practical AI and generative AI concepts."
+    - title: "Dr. Prompt"
+      link: "https://www.drprompt.it/"
+      tagline: "Prompt engineering website focused on practical methods for designing effective prompts and applying generative AI in professional workflows."
     - title: "Tender AI Assistant"
       link: "https://tender-ai-assistant.vercel.app/"
       tagline: "Web app per analizzare bandi di gara ed estrarre requisiti chiave a supporto dell'offerta."
@@ -142,6 +154,12 @@ projects:
 skills:
   title: "Skills &amp; Proficiency"
   toolset:
+    - name: "Generative AI Strategy"
+      level: 98%
+    - name: "Prompt Engineering"
+      level: 98%
+    - name: "AI Product Prototyping"
+      level: 95%
     - name: "Data Analysis"
       level: 98%
     - name: "Problem-Solving"
