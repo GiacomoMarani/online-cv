@@ -1,7 +1,7 @@
 @media print {
   @page {
     size: A4;
-    margin: 0.8cm 0.6cm;
+    margin: 0;
   }
 
   /* ===== Force color printing ===== */
@@ -15,7 +15,7 @@
   body {
     font-size: 8pt;
     line-height: 1.3;
-    padding: 0 !important;
+    padding: 0.8cm 0.6cm !important;
     margin: 0 !important;
     background: #fff !important;
     color: #333 !important;
@@ -361,9 +361,15 @@
     color: #ffffff !important;
   }
 
-  /* ===== Links: no URL expansion ===== */
+  /* ===== Links: keep clickable, hide raw URL text ===== */
   a[href]:after {
     content: none !important;
+  }
+
+  .main-wrapper a[href] {
+    color: #06b6d4 !important;
+    text-decoration: underline !important;
+    text-underline-offset: 1pt !important;
   }
 
   /* ===== Page break control ===== */
