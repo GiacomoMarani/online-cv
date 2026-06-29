@@ -2,7 +2,7 @@
 <div class="download-bar" id="download-bar">
   <div class="download-bar-inner">
     <span class="download-bar-label">
-      <i class="fas fa-download"></i> Scarica CV
+      <i class="fas fa-download"></i>
     </span>
     <div class="download-bar-buttons">
       <button class="download-btn download-btn-pdf" id="btn-download-pdf" onclick="downloadPDF()" title="Salva come PDF">
@@ -18,61 +18,58 @@
 </div>
 
 <style>
-  /* ===== Download Bar ===== */
+  /* ===== Download Bar — Top Right ===== */
   .download-bar {
     position: fixed;
-    bottom: 28px;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 18px;
+    right: 18px;
+    left: auto;
+    bottom: auto;
+    transform: none;
     z-index: 9999;
-    animation: slideUp 0.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    animation: fadeIn 0.4s cubic-bezier(0.22, 1, 0.36, 1) forwards;
   }
 
   .download-bar-inner {
     display: flex;
     align-items: center;
-    gap: 16px;
-    background: rgba(20, 20, 30, 0.88);
+    gap: 10px;
+    background: rgba(15, 23, 42, 0.92);
     backdrop-filter: blur(18px) saturate(180%);
     -webkit-backdrop-filter: blur(18px) saturate(180%);
-    border: 1px solid rgba(255,255,255,0.12);
-    border-radius: 60px;
-    padding: 10px 14px 10px 22px;
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 50px;
+    padding: 6px 8px 6px 14px;
     box-shadow:
-      0 8px 32px rgba(0,0,0,0.28),
-      0 2px 8px rgba(6,182,212,0.15),
-      inset 0 1px 0 rgba(255,255,255,0.06);
+      0 4px 20px rgba(0,0,0,0.25),
+      0 1px 6px rgba(6,182,212,0.12);
   }
 
   .download-bar-label {
-    color: rgba(255,255,255,0.75);
+    color: rgba(255,255,255,0.6);
     font-size: 13px;
-    font-weight: 600;
-    letter-spacing: 0.3px;
-    white-space: nowrap;
     display: flex;
     align-items: center;
-    gap: 8px;
   }
 
   .download-bar-label i {
-    font-size: 14px;
+    font-size: 13px;
     color: rgba(6,182,212,0.9);
   }
 
   .download-bar-buttons {
     display: flex;
-    gap: 8px;
+    gap: 6px;
   }
 
   .download-btn {
     display: flex;
     align-items: center;
-    gap: 7px;
-    padding: 10px 20px;
+    gap: 6px;
+    padding: 8px 16px;
     border: none;
     border-radius: 50px;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 700;
     font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
     cursor: pointer;
@@ -96,7 +93,7 @@
   }
 
   .download-btn i {
-    font-size: 15px;
+    font-size: 13px;
     position: relative;
     z-index: 1;
   }
@@ -110,7 +107,7 @@
   .download-btn-pdf {
     background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
     color: #fff;
-    box-shadow: 0 2px 12px rgba(231,76,60,0.3);
+    box-shadow: 0 2px 10px rgba(231,76,60,0.25);
   }
 
   .download-btn-pdf::before {
@@ -118,101 +115,64 @@
   }
 
   .download-btn-pdf:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(231,76,60,0.45);
-  }
-
-  .download-btn-pdf:active {
-    transform: translateY(0px);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 16px rgba(231,76,60,0.35);
   }
 
   /* Word Button */
   .download-btn-word {
-    background: linear-gradient(135deg, #2b5797 0%, #1a3a6b 100%);
+    background: linear-gradient(135deg, #2b7cd3 0%, #185abd 100%);
     color: #fff;
-    box-shadow: 0 2px 12px rgba(43,87,151,0.3);
+    box-shadow: 0 2px 10px rgba(43,124,211,0.25);
   }
 
   .download-btn-word::before {
-    background: linear-gradient(135deg, #3a6cb5 0%, #2b5797 100%);
+    background: linear-gradient(135deg, #4a9ae1 0%, #2b7cd3 100%);
   }
 
   .download-btn-word:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(43,87,151,0.45);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 16px rgba(43,124,211,0.35);
   }
 
-  .download-btn-word:active {
-    transform: translateY(0px);
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
   }
 
-  @keyframes slideUp {
-    from {
-      opacity: 0;
-      transform: translateX(-50%) translateY(30px);
+  /* Hide on mobile */
+  @media (max-width: 767px) {
+    .download-bar {
+      top: auto;
+      bottom: 14px;
+      right: 14px;
     }
-    to {
-      opacity: 1;
-      transform: translateX(-50%) translateY(0);
+    .download-bar-label {
+      display: none;
+    }
+    .download-btn span {
+      display: none;
+    }
+    .download-btn {
+      padding: 10px 12px;
     }
   }
 
-  /* Hide on print */
+  /* Print: hide */
   @media print {
     .download-bar {
       display: none !important;
     }
   }
-
-  /* Mobile responsive */
-  @media (max-width: 480px) {
-    .download-bar-inner {
-      padding: 8px 12px 8px 16px;
-      gap: 10px;
-    }
-    .download-bar-label {
-      font-size: 0;
-    }
-    .download-bar-label i {
-      font-size: 16px;
-    }
-    .download-btn {
-      padding: 9px 16px;
-      font-size: 12px;
-    }
-  }
 </style>
 
 <script>
-  // ===== PDF Download (via browser print dialog → Save as PDF) =====
   function downloadPDF() {
-    var btn = document.getElementById('btn-download-pdf');
-    btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> <span>...</span>';
-
-    // Small delay to show spinner, then trigger print
-    setTimeout(function() {
-      window.print();
-      // Restore button after print dialog
-      setTimeout(function() {
-        btn.innerHTML = '<i class="fas fa-file-pdf"></i> <span>PDF</span>';
-      }, 1000);
-    }, 300);
+    window.print();
   }
 
-  // ===== Word Download (generates .doc from HTML) =====
   function downloadWord() {
-    var btn = document.getElementById('btn-download-word');
-    btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> <span>...</span>';
-
-    setTimeout(function() {
-      try {
-        generateWordDocument();
-      } catch(e) {
-        console.error('Word generation error:', e);
-        alert('Errore nella generazione del documento Word. Prova il download PDF.');
-      }
-      btn.innerHTML = '<i class="fas fa-file-word"></i> <span>Word</span>';
-    }, 400);
+    generateWordDocument();
   }
 
   function generateWordDocument() {
@@ -233,172 +193,59 @@
 
     // Get main content sections
     var mainContent = document.querySelector('.main-wrapper');
-    var sectionsHTML = '';
+    var sections = mainContent ? mainContent.innerHTML : '';
 
-    if (mainContent) {
-      // Clone and clean the content
-      var clone = mainContent.cloneNode(true);
+    // Clean up sections - remove Font Awesome stacks
+    sections = sections.replace(/<span class="fa-stack[^>]*>[\s\S]*?<\/span>/gi, '');
+    sections = sections.replace(/class="[^"]*"/gi, function(match) {
+      var cls = match.match(/class="([^"]*)"/)[1];
+      if (cls.indexOf('section-title') !== -1) return 'class="section-title"';
+      if (cls.indexOf('job-title') !== -1) return 'class="job-title"';
+      if (cls.indexOf('project-title') !== -1) return 'class="project-title"';
+      if (cls.indexOf('project-tagline') !== -1) return 'class="project-tagline"';
+      if (cls.indexOf('time') !== -1) return 'class="time"';
+      if (cls.indexOf('company') !== -1) return 'class="company"';
+      if (cls.indexOf('upper-row') !== -1) return 'class="upper-row"';
+      return match;
+    });
 
-      // Remove any download bars or interactive elements from clone
-      var downloadBars = clone.querySelectorAll('.download-bar');
-      downloadBars.forEach(function(el) { el.remove(); });
+    // Build Word document HTML
+    var wordContent = '<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40">';
+    wordContent += '<head><meta charset="utf-8"><title>CV ' + name + '</title>';
+    wordContent += '<style>';
+    wordContent += '@page { size: A4; margin: 1.5cm 1.5cm; }';
+    wordContent += 'body { font-family: Calibri, Arial, sans-serif; font-size: 11pt; color: #333; line-height: 1.5; }';
+    wordContent += '.cv-header { border-bottom: 3px solid #06b6d4; padding-bottom: 12pt; margin-bottom: 18pt; }';
+    wordContent += '.cv-header .name { font-size: 22pt; font-weight: bold; color: #1a1a2e; margin: 0 0 4pt 0; }';
+    wordContent += '.cv-header .tagline { font-size: 13pt; color: #06b6d4; margin: 0 0 8pt 0; font-style: italic; }';
+    wordContent += '.cv-header .contact { font-size: 10pt; color: #666; }';
+    wordContent += '.cv-header .contact span { margin-right: 16pt; }';
+    wordContent += 'h2, .section-title { font-size: 14pt; color: #06b6d4; text-transform: uppercase; border-bottom: 1px solid #ddd; padding-bottom: 4pt; margin-top: 16pt; margin-bottom: 10pt; }';
+    wordContent += '.upper-row { margin-bottom: 2pt; }';
+    wordContent += '.job-title { font-size: 12pt; font-weight: bold; color: #2c3e50; display: inline; }';
+    wordContent += '.time { float: right; color: #888; font-size: 10pt; }';
+    wordContent += '.company { font-size: 10pt; color: #777; margin-bottom: 6pt; }';
+    wordContent += 'ul { margin: 4pt 0; padding-left: 20pt; }';
+    wordContent += 'li { margin-bottom: 3pt; }';
+    wordContent += '.project-title { color: #06b6d4; font-weight: bold; }';
+    wordContent += '.project-tagline { color: #666; }';
+    wordContent += 'a { color: #06b6d4; text-decoration: none; }';
+    wordContent += '.fa-stack, .fa-circle, .fa-inverse, .fas, .fab, .far, .level-bar, .level-bar-inner { display: none !important; }';
+    wordContent += '</style></head><body>';
 
-      // Convert skill bars to text
-      var skillBars = clone.querySelectorAll('.level-bar');
-      skillBars.forEach(function(bar) {
-        var inner = bar.querySelector('.level-bar-inner');
-        if (inner) {
-          var width = inner.style.width || '0%';
-          var textNode = document.createTextNode(' — ' + width);
-          bar.parentNode.replaceChild(textNode, bar);
-        }
-      });
+    // Header
+    wordContent += '<div class="cv-header">';
+    wordContent += '<div class="name">' + name + '</div>';
+    wordContent += '<div class="tagline">' + tagline + '</div>';
+    wordContent += '<div class="contact">';
+    wordContent += '<span>✉ ' + email + '</span>';
+    wordContent += '<span>☎ ' + phone + '</span>';
+    wordContent += '<span>LinkedIn: ' + linkedin + '</span>';
+    wordContent += '</div></div>';
 
-      sectionsHTML = clone.innerHTML;
-    }
-
-    // Build Word-compatible HTML
-    var wordContent = `
-      <html xmlns:o="urn:schemas-microsoft-com:office:office"
-            xmlns:w="urn:schemas-microsoft-com:office:word"
-            xmlns="http://www.w3.org/TR/REC-html40">
-      <head>
-        <meta charset="utf-8">
-        <title>CV - ${name}</title>
-        <!--[if gte mso 9]>
-        <xml>
-          <w:WordDocument>
-            <w:View>Print</w:View>
-            <w:Zoom>100</w:Zoom>
-            <w:DoNotOptimizeForBrowser/>
-          </w:WordDocument>
-        </xml>
-        <![endif]-->
-        <style>
-          @page {
-            size: A4;
-            margin: 2cm;
-          }
-          body {
-            font-family: Calibri, Arial, sans-serif;
-            font-size: 11pt;
-            color: #333;
-            line-height: 1.5;
-          }
-          .cv-header {
-            border-bottom: 3px solid #06b6d4;
-            padding-bottom: 12pt;
-            margin-bottom: 18pt;
-          }
-          .cv-header h1 {
-            font-size: 24pt;
-            color: #2c3e50;
-            margin: 0 0 4pt 0;
-            font-weight: bold;
-          }
-          .cv-header .tagline {
-            font-size: 13pt;
-            color: #06b6d4;
-            margin: 0 0 8pt 0;
-            font-style: italic;
-          }
-          .cv-header .contact-info {
-            font-size: 10pt;
-            color: #666;
-          }
-          .cv-header .contact-info span {
-            margin-right: 15pt;
-          }
-          h2, .section-title {
-            font-size: 14pt;
-            color: #06b6d4;
-            text-transform: uppercase;
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 4pt;
-            margin-top: 16pt;
-            margin-bottom: 10pt;
-          }
-          h3, .job-title, .degree {
-            font-size: 12pt;
-            color: #2c3e50;
-            margin: 4pt 0 2pt 0;
-          }
-          .time {
-            color: #888;
-            font-size: 10pt;
-          }
-          .company, .university {
-            color: #666;
-            font-size: 10pt;
-            margin-bottom: 6pt;
-          }
-          .details {
-            font-size: 10.5pt;
-            margin-bottom: 8pt;
-          }
-          .details ul {
-            margin: 4pt 0;
-            padding-left: 20pt;
-          }
-          .details li {
-            margin-bottom: 3pt;
-          }
-          .project-title {
-            color: #06b6d4;
-            font-weight: bold;
-          }
-          .project-tagline {
-            font-size: 10pt;
-            color: #666;
-          }
-          a {
-            color: #06b6d4;
-            text-decoration: none;
-          }
-          .fa-stack, .fa-circle, .fa-inverse,
-          .fas, .fab, .far {
-            display: none !important;
-          }
-          .level-title {
-            display: inline;
-            font-weight: bold;
-            font-size: 10.5pt;
-          }
-          .summary {
-            font-size: 10.5pt;
-            line-height: 1.6;
-          }
-          .item {
-            margin-bottom: 10pt;
-          }
-          .upper-row {
-            display: block;
-          }
-          .section {
-            margin-bottom: 14pt;
-          }
-          .skillset .item {
-            margin-bottom: 3pt;
-          }
-          table {
-            border-collapse: collapse;
-          }
-        </style>
-      </head>
-      <body>
-        <div class="cv-header">
-          <h1>${name}</h1>
-          <p class="tagline">${tagline}</p>
-          <p class="contact-info">
-            <span>✉ ${email}</span>
-            <span>☎ ${phone}</span>
-            <span>LinkedIn: linkedin.com/in/${linkedin}</span>
-          </p>
-        </div>
-        ${sectionsHTML}
-      </body>
-      </html>
-    `;
+    // Main content
+    wordContent += sections;
+    wordContent += '</body></html>';
 
     // Create and trigger download
     var blob = new Blob(['\ufeff', wordContent], {

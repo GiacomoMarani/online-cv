@@ -1,7 +1,7 @@
 @media print {
   @page {
     size: A4;
-    margin: 1.5cm 1.2cm;
+    margin: 1.2cm 1cm;
   }
 
   /* ===== Reset & Base ===== */
@@ -12,12 +12,13 @@
   }
 
   body {
-    font-size: 10pt;
-    line-height: 1.45;
+    font-size: 9.5pt;
+    line-height: 1.4;
     padding: 0 !important;
     margin: 0 !important;
     background: #fff !important;
     color: #333 !important;
+    font-family: "Inter", Calibri, Arial, sans-serif !important;
   }
 
   /* ===== Hide UI elements ===== */
@@ -28,226 +29,277 @@
     display: none !important;
   }
 
-  /* ===== Layout ===== */
+  /* ===== Layout: Force sidebar LEFT for print ===== */
   .wrapper {
-    display: grid !important;
-    grid-template-columns: 28% 72% !important;
+    display: flex !important;
+    flex-direction: row !important;
     max-width: unset !important;
+    width: 100% !important;
     margin: 0 !important;
+    padding: 0 !important;
     box-shadow: none !important;
     border: none !important;
+    border-radius: 0 !important;
+    overflow: visible !important;
   }
 
-  /* ===== Sidebar ===== */
+  /* ===== Sidebar (printed as left column) ===== */
   .sidebar-wrapper {
     position: static !important;
     float: none !important;
-    width: auto !important;
+    display: block !important;
+    width: 200pt !important;
+    min-width: 200pt !important;
+    max-width: 200pt !important;
+    flex-shrink: 0 !important;
     background: #0f172a !important;
     padding: 0 !important;
-    font-size: 9pt;
-    page-break-inside: avoid;
+    font-size: 8.5pt;
+    order: -1 !important;
+    height: auto !important;
+    overflow: visible !important;
   }
 
   .sidebar-wrapper .profile-container {
-    padding: 18pt 14pt !important;
-    background: rgba(0, 0, 0, 0.2) !important;
+    padding: 16pt 12pt !important;
+    text-align: center;
   }
 
   .sidebar-wrapper .name {
-    font-size: 18pt !important;
+    font-size: 15pt !important;
     color: #fff !important;
-    margin-bottom: 4pt;
+    margin-bottom: 3pt;
   }
 
   .sidebar-wrapper .tagline {
-    font-size: 9pt !important;
+    font-size: 8pt !important;
     color: rgba(255,255,255,0.7) !important;
   }
 
   .sidebar-wrapper .avatar {
-    width: 70px !important;
-    height: 70px !important;
+    width: 60px !important;
+    height: 60px !important;
     filter: none !important;
     -webkit-filter: none !important;
+    border-radius: 50% !important;
   }
 
   .sidebar-wrapper .container-block {
-    padding: 12pt 14pt !important;
+    padding: 10pt 12pt !important;
+    border-top: 1px solid rgba(255,255,255,0.08) !important;
   }
 
   .sidebar-wrapper .container-block-title {
-    font-size: 10pt !important;
-    margin-bottom: 8pt !important;
-    color: #fff !important;
+    font-size: 9pt !important;
+    margin-bottom: 6pt !important;
+    color: #22d3ee !important;
+    text-transform: uppercase;
+    letter-spacing: 0.5pt;
+  }
+
+  .sidebar-wrapper .contact-list {
+    padding: 0 !important;
+    margin: 0 !important;
+    list-style: none !important;
   }
 
   .sidebar-wrapper .contact-list li {
-    margin-bottom: 6pt !important;
-    font-size: 8.5pt;
+    margin-bottom: 5pt !important;
+    font-size: 7.5pt;
     word-break: break-all;
+    color: #fff !important;
   }
 
   .sidebar-wrapper .contact-list .fas,
   .sidebar-wrapper .contact-list .fab,
   .sidebar-wrapper .contact-list .far {
-    font-size: 12pt !important;
-    color: #fff !important;
+    font-size: 9pt !important;
+    color: #22d3ee !important;
+    width: 14pt;
   }
 
   .sidebar-wrapper a {
-    color: #fff !important;
+    color: rgba(255,255,255,0.9) !important;
     text-decoration: none !important;
   }
 
   .sidebar-wrapper .education-container .item {
-    margin-bottom: 8pt !important;
+    margin-bottom: 7pt !important;
   }
 
   .sidebar-wrapper .degree {
-    font-size: 9pt !important;
+    font-size: 8pt !important;
+    color: #fff !important;
+    font-weight: 600;
   }
 
   .sidebar-wrapper .education-container .meta,
   .sidebar-wrapper .education-container .time {
-    font-size: 8pt !important;
+    font-size: 7pt !important;
+    color: rgba(255,255,255,0.6) !important;
+  }
+
+  .sidebar-wrapper .languages-list,
+  .sidebar-wrapper .interests-list {
+    padding: 0 !important;
+    margin: 0 !important;
+    list-style: none !important;
   }
 
   .sidebar-wrapper .languages-list li,
   .sidebar-wrapper .interests-list li {
-    margin-bottom: 4pt !important;
-    font-size: 8.5pt;
+    margin-bottom: 3pt !important;
+    font-size: 8pt;
+    color: rgba(255,255,255,0.85) !important;
   }
 
   .sidebar-wrapper .lang-desc {
-    font-size: 8pt !important;
+    font-size: 7pt !important;
+    color: rgba(255,255,255,0.5) !important;
   }
 
   /* ===== Main Content ===== */
   .main-wrapper {
+    flex: 1 !important;
     background: #fff !important;
-    padding: 18pt 22pt !important;
+    padding: 16pt 18pt !important;
+    overflow: visible !important;
   }
 
   .main-wrapper .section-title {
-    font-size: 13pt !important;
-    margin-bottom: 10pt !important;
+    font-size: 12pt !important;
+    margin-bottom: 8pt !important;
     margin-top: 0 !important;
     color: #06b6d4 !important;
     page-break-after: avoid;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 4pt;
   }
 
   .main-wrapper .section-title .fa-stack {
-    font-size: 8pt !important;
+    font-size: 7pt !important;
   }
 
   .main-wrapper .section {
-    margin-bottom: 14pt !important;
+    margin-bottom: 12pt !important;
     page-break-inside: avoid;
   }
 
   /* Experiences & Education */
   .main-wrapper .item {
-    margin-bottom: 10pt !important;
+    margin-bottom: 8pt !important;
     page-break-inside: avoid;
   }
 
   .main-wrapper .upper-row {
     display: flex !important;
+    justify-content: space-between !important;
     margin-bottom: 1pt !important;
   }
 
   .main-wrapper .job-title,
   .main-wrapper .degree {
-    font-size: 11pt !important;
-    color: #2c3e50 !important;
+    font-size: 10.5pt !important;
+    color: #1e293b !important;
+    font-weight: 600 !important;
   }
 
   .main-wrapper .time {
     position: static !important;
-    float: right !important;
-    color: #666 !important;
-    font-size: 9pt !important;
+    float: none !important;
+    color: #64748b !important;
+    font-size: 8.5pt !important;
     white-space: nowrap;
     margin-left: auto;
+    padding-left: 8pt;
   }
 
   .main-wrapper .company,
   .main-wrapper .university {
-    font-size: 9pt !important;
-    color: #777 !important;
-    margin-bottom: 4pt !important;
+    font-size: 8.5pt !important;
+    color: #64748b !important;
+    margin-bottom: 3pt !important;
   }
 
   .main-wrapper .details {
-    font-size: 9pt !important;
-    line-height: 1.5 !important;
+    font-size: 8.5pt !important;
+    line-height: 1.45 !important;
     color: #444 !important;
   }
 
   .main-wrapper .details ul {
-    margin: 3pt 0 !important;
-    padding-left: 16pt !important;
+    margin: 2pt 0 !important;
+    padding-left: 14pt !important;
   }
 
   .main-wrapper .details li {
-    margin-bottom: 2pt !important;
+    margin-bottom: 1.5pt !important;
   }
 
   .main-wrapper .summary {
-    font-size: 9.5pt !important;
-    line-height: 1.5 !important;
+    font-size: 9pt !important;
+    line-height: 1.45 !important;
     color: #444 !important;
+  }
+
+  .main-wrapper .summary p {
+    margin-bottom: 6pt !important;
   }
 
   /* Projects */
   .main-wrapper .project-title {
-    font-size: 10pt !important;
+    font-size: 9pt !important;
   }
 
   .main-wrapper .project-title a {
-    color: #2a7f94 !important;
+    color: #06b6d4 !important;
     text-decoration: none !important;
   }
 
   .main-wrapper .project-tagline {
-    font-size: 8.5pt !important;
+    font-size: 8pt !important;
     color: #666 !important;
   }
 
   .main-wrapper .projects-section .item {
-    margin-bottom: 6pt !important;
+    margin-bottom: 5pt !important;
   }
 
   .main-wrapper .projects-section .intro {
-    margin-bottom: 8pt !important;
+    margin-bottom: 6pt !important;
+    font-size: 8.5pt !important;
   }
 
   /* Skills */
   .skillset .item {
-    margin-bottom: 6pt !important;
+    margin-bottom: 5pt !important;
     overflow: visible !important;
+    clear: both !important;
   }
 
   .skillset .level-title {
-    font-size: 9pt !important;
+    font-size: 8.5pt !important;
     float: left !important;
     width: 30% !important;
     margin-bottom: 0 !important;
+    line-height: 10pt !important;
   }
 
   .skillset .level-bar {
-    height: 8pt !important;
+    height: 7pt !important;
     background: #e8e8e8 !important;
     float: left !important;
     width: 70% !important;
     position: relative !important;
-    top: 2pt !important;
+    top: 1pt !important;
+    border-radius: 3pt !important;
+    overflow: hidden !important;
   }
 
   .skillset .level-bar-inner {
-    height: 8pt !important;
+    height: 7pt !important;
     background: #06b6d4 !important;
+    border-radius: 3pt !important;
   }
 
   /* ===== Font Awesome Colors ===== */
