@@ -1,4 +1,4 @@
-{% assign languages = site.data.data.sidebar.languages %}
+{% if page.lang == 'it' %}{% assign languages = site.data.data_it.sidebar.languages %}{% else %}{% assign languages = site.data.data.sidebar.languages %}{% endif %}
 {% if languages %}
 <div class="languages-container container-block">
 

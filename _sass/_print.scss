@@ -1,45 +1,283 @@
-@media print
-   {
-    @page {
-        size: A4;
-    }
-    body {
-       font-size: 12pt;
-    }
+@media print {
+  @page {
+    size: A4;
+    margin: 1.5cm 1.2cm;
+  }
 
-    img.avatar {
-        filter: grayscale(1);
-        -webkit-filter: greyscale(1);
-    }
-   .main-wrapper .time {
-       float: right;
-        color: black !important;
-        -webkit-print-color-adjust: exact; 
-   }
-    .sidebar-wrapper {
-        position: static;
-        float: right;
-        width: 40%;
-        -webkit-print-color-adjust: exact; 
-    }
+  /* ===== Reset & Base ===== */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    color-adjust: exact !important;
+  }
 
-    .remove-container.container-block {
-       display: none;
-    }
+  body {
+    font-size: 10pt;
+    line-height: 1.45;
+    padding: 0 !important;
+    margin: 0 !important;
+    background: #fff !important;
+    color: #333 !important;
+  }
 
-    footer {
-       display: none;
-    }
+  /* ===== Hide UI elements ===== */
+  .download-bar,
+  .lang-toggle,
+  footer,
+  .footer {
+    display: none !important;
+  }
 
-    .skillset .level-bar-inner {
-       background-color: black !important;
-       -webkit-print-color-adjust: exact; 
-    }
+  /* ===== Layout ===== */
+  .wrapper {
+    display: grid !important;
+    grid-template-columns: 28% 72% !important;
+    max-width: unset !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
 
-   .fa-inverse,
-   .fa-inverse:after,
-   .fa-inverse:before {
-     color: #ffffff !important;
-   }
+  /* ===== Sidebar ===== */
+  .sidebar-wrapper {
+    position: static !important;
+    float: none !important;
+    width: auto !important;
+    background: #0f172a !important;
+    padding: 0 !important;
+    font-size: 9pt;
+    page-break-inside: avoid;
+  }
 
+  .sidebar-wrapper .profile-container {
+    padding: 18pt 14pt !important;
+    background: rgba(0, 0, 0, 0.2) !important;
+  }
+
+  .sidebar-wrapper .name {
+    font-size: 18pt !important;
+    color: #fff !important;
+    margin-bottom: 4pt;
+  }
+
+  .sidebar-wrapper .tagline {
+    font-size: 9pt !important;
+    color: rgba(255,255,255,0.7) !important;
+  }
+
+  .sidebar-wrapper .avatar {
+    width: 70px !important;
+    height: 70px !important;
+    filter: none !important;
+    -webkit-filter: none !important;
+  }
+
+  .sidebar-wrapper .container-block {
+    padding: 12pt 14pt !important;
+  }
+
+  .sidebar-wrapper .container-block-title {
+    font-size: 10pt !important;
+    margin-bottom: 8pt !important;
+    color: #fff !important;
+  }
+
+  .sidebar-wrapper .contact-list li {
+    margin-bottom: 6pt !important;
+    font-size: 8.5pt;
+    word-break: break-all;
+  }
+
+  .sidebar-wrapper .contact-list .fas,
+  .sidebar-wrapper .contact-list .fab,
+  .sidebar-wrapper .contact-list .far {
+    font-size: 12pt !important;
+    color: #fff !important;
+  }
+
+  .sidebar-wrapper a {
+    color: #fff !important;
+    text-decoration: none !important;
+  }
+
+  .sidebar-wrapper .education-container .item {
+    margin-bottom: 8pt !important;
+  }
+
+  .sidebar-wrapper .degree {
+    font-size: 9pt !important;
+  }
+
+  .sidebar-wrapper .education-container .meta,
+  .sidebar-wrapper .education-container .time {
+    font-size: 8pt !important;
+  }
+
+  .sidebar-wrapper .languages-list li,
+  .sidebar-wrapper .interests-list li {
+    margin-bottom: 4pt !important;
+    font-size: 8.5pt;
+  }
+
+  .sidebar-wrapper .lang-desc {
+    font-size: 8pt !important;
+  }
+
+  /* ===== Main Content ===== */
+  .main-wrapper {
+    background: #fff !important;
+    padding: 18pt 22pt !important;
+  }
+
+  .main-wrapper .section-title {
+    font-size: 13pt !important;
+    margin-bottom: 10pt !important;
+    margin-top: 0 !important;
+    color: #06b6d4 !important;
+    page-break-after: avoid;
+  }
+
+  .main-wrapper .section-title .fa-stack {
+    font-size: 8pt !important;
+  }
+
+  .main-wrapper .section {
+    margin-bottom: 14pt !important;
+    page-break-inside: avoid;
+  }
+
+  /* Experiences & Education */
+  .main-wrapper .item {
+    margin-bottom: 10pt !important;
+    page-break-inside: avoid;
+  }
+
+  .main-wrapper .upper-row {
+    display: flex !important;
+    margin-bottom: 1pt !important;
+  }
+
+  .main-wrapper .job-title,
+  .main-wrapper .degree {
+    font-size: 11pt !important;
+    color: #2c3e50 !important;
+  }
+
+  .main-wrapper .time {
+    position: static !important;
+    float: right !important;
+    color: #666 !important;
+    font-size: 9pt !important;
+    white-space: nowrap;
+    margin-left: auto;
+  }
+
+  .main-wrapper .company,
+  .main-wrapper .university {
+    font-size: 9pt !important;
+    color: #777 !important;
+    margin-bottom: 4pt !important;
+  }
+
+  .main-wrapper .details {
+    font-size: 9pt !important;
+    line-height: 1.5 !important;
+    color: #444 !important;
+  }
+
+  .main-wrapper .details ul {
+    margin: 3pt 0 !important;
+    padding-left: 16pt !important;
+  }
+
+  .main-wrapper .details li {
+    margin-bottom: 2pt !important;
+  }
+
+  .main-wrapper .summary {
+    font-size: 9.5pt !important;
+    line-height: 1.5 !important;
+    color: #444 !important;
+  }
+
+  /* Projects */
+  .main-wrapper .project-title {
+    font-size: 10pt !important;
+  }
+
+  .main-wrapper .project-title a {
+    color: #2a7f94 !important;
+    text-decoration: none !important;
+  }
+
+  .main-wrapper .project-tagline {
+    font-size: 8.5pt !important;
+    color: #666 !important;
+  }
+
+  .main-wrapper .projects-section .item {
+    margin-bottom: 6pt !important;
+  }
+
+  .main-wrapper .projects-section .intro {
+    margin-bottom: 8pt !important;
+  }
+
+  /* Skills */
+  .skillset .item {
+    margin-bottom: 6pt !important;
+    overflow: visible !important;
+  }
+
+  .skillset .level-title {
+    font-size: 9pt !important;
+    float: left !important;
+    width: 30% !important;
+    margin-bottom: 0 !important;
+  }
+
+  .skillset .level-bar {
+    height: 8pt !important;
+    background: #e8e8e8 !important;
+    float: left !important;
+    width: 70% !important;
+    position: relative !important;
+    top: 2pt !important;
+  }
+
+  .skillset .level-bar-inner {
+    height: 8pt !important;
+    background: #06b6d4 !important;
+  }
+
+  /* ===== Font Awesome Colors ===== */
+  .fa-circle {
+    color: #06b6d4 !important;
+  }
+
+  .fa-inverse,
+  .fa-inverse:after,
+  .fa-inverse:before {
+    color: #ffffff !important;
+  }
+
+  /* ===== Links ===== */
+  a[href]:after {
+    content: none !important;
+  }
+
+  /* ===== Page breaks ===== */
+  h2, h3 {
+    page-break-after: avoid !important;
+  }
+
+  .section {
+    page-break-inside: avoid;
+  }
+
+  /* Avoid orphans/widows */
+  p {
+    orphans: 3;
+    widows: 3;
+  }
 }

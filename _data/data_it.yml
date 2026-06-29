@@ -1,0 +1,165 @@
+sidebar:
+  position: right
+  about: false
+  education: true
+
+  # Informazioni profilo
+  name: "Giacomo Marani"
+  tagline: "Leader AI Generativa | Responsabile R&D"
+  avatar: "profile.jpg"
+
+  # Link sidebar
+  email: "Ing.giacomo.marani@gmail.com"
+  phone: "+39 333 8346294"
+  linkedin: "giacomo-marani-3a4532121"
+
+  languages:
+    title: "Lingue"
+    info:
+      - idiom: "Italiano"
+        level: "Madrelingua"
+      - idiom: "Inglese"
+        level: "Intermedio"
+
+  interests:
+    title: "Interessi"
+    info:
+      - item: "Tecnologia e Innovazione"
+        link: ""
+      - item: "Cinema e Musica"
+        link: ""
+      - item: "Giochi di Strategia"
+        link: ""
+      - item: "Filosofia"
+        link: ""
+
+career-profile:
+  title: "Profilo Professionale"
+  summary: |
+    Guido le attività di R&D e intelligenza artificiale generativa presso ATI Project, studio di ingegneria e architettura a Pisa. Il mio lavoro è concreto: sviluppo strumenti AI per l'analisi di gare d'appalto, automatizzo i flussi di lavoro di modellazione energetica e aiuto il team a prendere decisioni progettuali più rapide e informate.
+
+    La mia formazione è in ingegneria energetica. Dopo la laurea magistrale all'Università di Pisa, ho lavorato su grandi progetti ospedalieri in Scandinavia — il Nuovo Ospedale Bispebjerg a Copenaghen e il Nuovo Ospedale Universitario di Odense — gestendo il coordinamento BIM, simulazioni energetiche con DesignBuilder ed EnergyPlus, e automazione con Python.
+
+    Ho contribuito al progetto BIM4REN (Horizon 2020), dedicato alla riqualificazione energetica degli edifici esistenti tramite BIM, e collaboro con la Scuola Normale Superiore e il CNR nel progetto SoBigData, applicando big data e AI a problematiche urbane e ambientali. Nel 2023, il nostro team ha vinto la SoBigData Challenge US con un proof-of-concept per decisioni data-driven nella costruzione sostenibile.
+
+    Oggi faccio da ponte tra le potenzialità dell'AI e il lavoro ingegneristico di tutti i giorni — attraverso formazione interna, piattaforme di conoscenza e strumenti che i team usano davvero. Il mio obiettivo è rendere la conoscenza tecnica accessibile e trasformare buone idee in prototipi funzionanti.
+
+education:
+  title: "Formazione e Qualifiche"
+  info:
+    - degree: "Abilitazione Professionale — Ingegneria Industriale"
+      university: "Ordine degli Ingegneri della Provincia di Pisa"
+      time: "Feb 2019"
+      details: ""
+    - degree: "Laurea Magistrale in Ingegneria Energetica"
+      university: "Università di Pisa"
+      time: "Apr 2018"
+      details: |
+        Tesi: "Schemi di interoperabilità BIM-BPS: Controllo della IAQ in un'aula scolastica tramite DCV basato su CO2"
+    - degree: "Laurea Triennale in Ingegneria Energetica"
+      university: "Università di Pisa"
+      time: "Apr 2014"
+      details: |
+        Tesi: "Analisi e confronto di strumenti per sistemi energetici complessi con penetrazione di energie rinnovabili"
+
+experiences:
+  title: "Esperienze Lavorative"
+  info:
+    - role: "Responsabile R&D"
+      time: "Attuale"
+      company: "ATI Project Srl — Studio di progettazione, ingegneria e architettura, Pisa"
+      details: |
+        Guido le attività di AI e innovazione, dalla prototipazione di strumenti di AI generativa alla formazione interna sull'adozione responsabile dell'AI.
+        - Creato flussi di lavoro automatizzati che hanno ridotto i tempi di analisi energetica degli edifici di oltre il 30%
+        - Sviluppato prototipi AI per la valutazione di sostenibilità nelle fasi iniziali di progettazione
+        - Realizzato piattaforme di ricerca con dashboard Power BI per il monitoraggio della conoscenza progettuale e l'esplorazione dati
+        - Vinto la SoBigData Challenge US 2023 con uno strumento big data per decisioni nella costruzione sostenibile — integrando dati BIM, consumi di risorse, costi e impatti ambientali in un'unica piattaforma
+        - Gestito dati BIM per progetti complessi (fino a 250.000 mq, oltre 10.000 ambienti), automatizzando controlli qualità e creando dashboard per il coordinamento interdisciplinare
+
+    - role: "Ingegnere Esecutivo"
+      time: "Feb 2023"
+      company: "ATI Project Srl — Studio di progettazione, ingegneria e architettura, Pisa"
+      details: |
+        Progettazione impiantistica e certificazione energetica su progetti internazionali:
+        - Silva Mountain Resort, Mittenwald (Germania): calcolo carichi termici e frigoriferi con Revit/DesignBuilder, secondo DIN V 18599-2
+        - Nuovo Ospedale Bispebjerg, Copenaghen: calcolo carichi termici e frigoriferi con Revit/DesignBuilder, secondo le normative danesi BR15
+        - Nuovo Ospedale Universitario di Odense: progettazione HVAC e analisi dati BIM in Revit, con sviluppo del modello energetico
+
+    - role: "Ingegnere Energetico"
+      time: "Mag 2018"
+      company: "ATI Project Srl — Studio di progettazione, ingegneria e architettura, Pisa"
+      details: |
+        Progettazione impiantistica e certificazione energetica:
+        - BIM4REN (Horizon 2020): contributo allo sviluppo della proposta per questo progetto UE con 23 partner in 10 paesi, focalizzato sul BIM per la riqualificazione energetica degli edifici esistenti
+        - Sede Umberto Forti — Certificazione LEED Gold
+        - Scuola Lamarmora — Certificazione LEED Platinum: modellazione energetica in DesignBuilder per i requisiti LEED EA
+
+projects:
+  title: "Progetti"
+  intro: "Alcuni dei miei progetti e iniziative."
+  assignments:
+    - title: "Tender AI Pro"
+      link: "https://tender-ai-pro.onrender.com/"
+      tagline: "Web app per l'analisi di bandi di gara — estrae requisiti e supporta la stesura di offerte con AI generativa."
+    - title: "Tender AI DB"
+      link: "https://tender-ai-db.vercel.app/gare"
+      tagline: "Database consultabile di gare d'appalto pubbliche con filtri e analisi basati su AI."
+    - title: "AI Things Beta"
+      link: "https://ai-things-beta.vercel.app/"
+      tagline: "Piattaforma interattiva per imparare concetti pratici di AI — costruita come risorsa operativa, non come manuale."
+    - title: "Dr. Prompt"
+      link: "https://www.drprompt.it/"
+      tagline: "Sito dedicato al prompt engineering e all'applicazione dell'AI generativa nei flussi di lavoro professionali."
+    - title: "Machine Learning su Life Cycle Assessment"
+      link: "https://atiproject.com/en/current-topics/machine-learning-application-on-life-cycle-assessment/"
+      tagline: "ML applicato a dataset BIM ed energetici per prevedere impatti ambientali nelle prime fasi di progettazione."
+    - title: "Perché l'AI ha bisogno del giudizio umano"
+      link: "https://www.reope.com/bimagination/why-ai-needs-human-judgment-for-better-design-decisions"
+      tagline: "Articolo su come usare i propri dati per decisioni progettuali più significative — senza fidarsi ciecamente del modello."
+    - title: "ATI Project: Digitale e Sostenibile"
+      link: "https://atiproject.com/en/current-topics/progetto-ati-project-digitale-e-sostenibile/"
+      tagline: "Iniziativa di innovazione cofinanziata dal bando 'Impresa Digitale' del Programma Regionale Toscana FESR 2021-2027."
+    - title: "ATI Project Export 2024"
+      link: "https://atiproject.com/en/current-topics/ati-project-export-2024/"
+      tagline: "Progetto di internazionalizzazione cofinanziato dal Programma Regionale Toscana FESR 2021-2027."
+    - title: "BIM4REN"
+      link: "https://bim4ren.eu/"
+      tagline: "Progetto Horizon 2020 sullo sfruttamento del BIM per la riqualificazione energetica degli edifici esistenti."
+
+skills:
+  title: "Competenze"
+  toolset:
+    - name: "Strategia AI Generativa"
+      level: 98%
+    - name: "Prompt Engineering"
+      level: 98%
+    - name: "Prototipazione Prodotti AI"
+      level: 95%
+    - name: "Analisi Dati"
+      level: 98%
+    - name: "Problem-Solving"
+      level: 98%
+    - name: "Excel & PowerBI"
+      level: 98%
+    - name: "M"
+      level: 98%
+    - name: "Python"
+      level: 78%
+    - name: "SQL"
+      level: 80%
+    - name: "pyRevit"
+      level: 50%
+    - name: "DesignBuilder"
+      level: 80%
+    - name: "EnergyPlus"
+      level: 70%
+    - name: "Git"
+      level: 50%
+    - name: "HTML"
+      level: 40%
+    - name: "CSS"
+      level: 40%
+
+footer: >
+  DM su
+  <a href="https://www.linkedin.com/in/giacomo-marani-3a4532121/" target="_blank" rel="nofollow">Linkedin</a>

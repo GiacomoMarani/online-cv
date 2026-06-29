@@ -1,6 +1,6 @@
-{% assign education = site.data.data.education %}
+{% if page.lang == 'it' %}{% assign education = site.data.data_it.education %}{% assign sidebar_edu = site.data.data_it.sidebar.education %}{% else %}{% assign education = site.data.data.education %}{% assign sidebar_edu = site.data.data.sidebar.education %}{% endif %}
 {% if education %}
-  {% if site.data.data.sidebar.education %}
+  {% if sidebar_edu %}
   <div class="education-container container-block">
 
     <h2 class="container-block-title">

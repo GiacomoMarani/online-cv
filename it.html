@@ -1,19 +1,23 @@
 ---
-layout: print
-lang: en
-permalink: /print
+layout: default
+lang: it
+permalink: /it
 ---
 
 
 {% include career-profile.html %}
 
-{% unless site.data.data.sidebar.education %}
+{% unless site.data.data_it.sidebar.education %}
   {% include education.html %}
 {% endunless %}
 
 {% include experiences.html %}
 
+{% include certifications.html %}
+
 {% include projects.html %}
+
+{% include oss-contributions.html %}
 
 {% include publications.html %}
 

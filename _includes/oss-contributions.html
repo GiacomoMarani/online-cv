@@ -1,4 +1,4 @@
-{% assign oss = site.data.data.oss %}
+{% if page.lang == 'it' %}{% assign oss = site.data.data_it.oss %}{% else %}{% assign oss = site.data.data.oss %}{% endif %}
 {% if oss %}
 <section class="section oss-section">
   <h2 class="section-title">

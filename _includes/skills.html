@@ -1,4 +1,5 @@
-{% assign skills = site.data.data.skills %} {% if skills %}
+{% if page.lang == 'it' %}{% assign skills = site.data.data_it.skills %}{% else %}{% assign skills = site.data.data.skills %}{% endif %}
+{% if skills %}
 <section class="skills-section section">
   <h2 class="section-title">
     <span class="fa-stack fa-xs">

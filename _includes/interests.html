@@ -1,4 +1,4 @@
-{% assign interests = site.data.data.sidebar.interests %}
+{% if page.lang == 'it' %}{% assign interests = site.data.data_it.sidebar.interests %}{% else %}{% assign interests = site.data.data.sidebar.interests %}{% endif %}
 {% if interests %}
 <div class="interests-container container-block">
 

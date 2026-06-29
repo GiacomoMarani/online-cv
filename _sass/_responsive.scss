@@ -11,20 +11,31 @@
 
   .wrapper {
     display: block;
+    border-radius: 0;
   }
 
   .main-wrapper {
-    padding: 30px;
+    padding: 28px 24px;
   }
 
   .main-wrapper .time {
     position: static;
     display: block;
-    margin-top: 5px;
+    margin-top: 4px;
+    font-size: 12px;
   }
 
   .main-wrapper .upper-row {
     margin-bottom: 0;
+    flex-direction: column;
+  }
+
+  .main-wrapper .section {
+    margin-bottom: 28px;
+  }
+
+  .main-wrapper .section-title {
+    font-size: 15px;
   }
 }
 /* Small devices (tablets, 768px and up) */
@@ -35,24 +46,24 @@
 @media (min-width: 992px) {
   .skillset .level-title {
     float: left;
-    width: 30%;
+    width: 28%;
     margin-bottom: 0;
   }
 
   .skillset .level-bar {
-    width: 70%;
+    width: 72%;
     float: left;
     position: relative;
-    top: 1px;
+    top: 3px;
   }
 }
 
 .skillset .level-bar-inner {
   width: auto;
-  -webkit-transition: width 2s ease-in-out;
-  -moz-transition: width 2s ease-in-out;
-  -o-transition: width 2s ease-in-out;
-  transition: width 2s ease-in-out;
+  -webkit-transition: width 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+  -moz-transition: width 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+  -o-transition: width 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+  transition: width 1.2s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 /* Large devices (large desktops, 1200px and up) */

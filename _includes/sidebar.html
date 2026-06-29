@@ -1,4 +1,4 @@
-{% assign sidebar = site.data.data.sidebar %}
+{% if page.lang == 'it' %}{% assign sidebar = site.data.data_it.sidebar %}{% else %}{% assign sidebar = site.data.data.sidebar %}{% endif %}
 <div class="sidebar-wrapper">
 
   <div class="profile-container">
@@ -16,6 +16,17 @@
     {% endif %}
 
   </div><!--//profile-container-->
+
+  <!-- Language Toggle -->
+  <div class="lang-toggle container-block">
+    {% if page.lang == 'it' %}
+      <a href="{{ site.baseurl }}/" class="lang-link" title="English">🇬🇧 EN</a>
+      <span class="lang-link lang-active" title="Italiano">🇮🇹 IT</span>
+    {% else %}
+      <span class="lang-link lang-active" title="English">🇬🇧 EN</span>
+      <a href="{{ site.baseurl }}/it" class="lang-link" title="Italiano">🇮🇹 IT</a>
+    {% endif %}
+  </div>
 
   {% include contact.html %}
 

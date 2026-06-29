@@ -1,4 +1,4 @@
-{% assign publications = site.data.data.publications %}
+{% if page.lang == 'it' %}{% assign publications = site.data.data_it.publications %}{% else %}{% assign publications = site.data.data.publications %}{% endif %}
 {% if publications %}
 <section class="section publications-section">
 

@@ -1,4 +1,4 @@
-{% assign experiences = site.data.data.experiences %}
+{% if page.lang == 'it' %}{% assign experiences = site.data.data_it.experiences %}{% else %}{% assign experiences = site.data.data.experiences %}{% endif %}
 {% if experiences %}
 <section class="section experiences-section">
   <h2 class="section-title">
@@ -34,4 +34,3 @@
 
 </section><!--//section-->
 {% endif %}
-
