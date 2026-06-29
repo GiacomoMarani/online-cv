@@ -168,7 +168,25 @@
 
 <script>
   function downloadPDF() {
+    // Remove target="_blank" so PDF readers can follow links
+    var links = document.querySelectorAll('a[target="_blank"]');
+    links.forEach(function(a) {
+      a.setAttribute('data-original-target', a.getAttribute('target'));
+      a.removeAttribute('target');
+    });
+
     window.print();
+
+    // Restore targets after printing
+    setTimeout(function() {
+      links.forEach(function(a) {
+        var orig = a.getAttribute('data-original-target');
+        if (orig) {
+          a.setAttribute('target', orig);
+          a.removeAttribute('data-original-target');
+        }
+      });
+    }, 500);
   }
 
   function downloadWord() {

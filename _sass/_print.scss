@@ -13,9 +13,9 @@
 
   /* ===== Reset & Base ===== */
   body {
-    font-size: 8pt;
-    line-height: 1.3;
-    padding: 0.8cm 0.6cm !important;
+    font-size: 8.5pt;
+    line-height: 1.4;
+    padding: 0.9cm 0.7cm !important;
     margin: 0 !important;
     background: #fff !important;
     color: #333 !important;
@@ -45,15 +45,15 @@
   }
 
   /* ========================================
-     SIDEBAR — compact left column
+     SIDEBAR — left column
      ======================================== */
   .sidebar-wrapper {
     position: static !important;
     float: none !important;
     display: block !important;
-    width: 160pt !important;
-    min-width: 160pt !important;
-    max-width: 160pt !important;
+    width: 170pt !important;
+    min-width: 170pt !important;
+    max-width: 170pt !important;
     flex-shrink: 0 !important;
     background: #0f172a !important;
     padding: 0 !important;
@@ -64,21 +64,21 @@
   }
 
   .sidebar-wrapper .profile-container {
-    padding: 12pt 10pt 10pt !important;
+    padding: 14pt 12pt 12pt !important;
     text-align: center;
     background: rgba(0, 0, 0, 0.15) !important;
   }
 
   .sidebar-wrapper .name {
-    font-size: 13pt !important;
+    font-size: 14pt !important;
     color: #fff !important;
-    margin-bottom: 2pt;
+    margin-bottom: 3pt;
     margin-top: 0;
     line-height: 1.2;
   }
 
   .sidebar-wrapper .tagline {
-    font-size: 7pt !important;
+    font-size: 7.5pt !important;
     color: rgba(255,255,255,0.7) !important;
     margin-top: 0;
     margin-bottom: 0;
@@ -86,22 +86,22 @@
   }
 
   .sidebar-wrapper .avatar {
-    width: 50px !important;
-    height: 50px !important;
+    width: 55px !important;
+    height: 55px !important;
     filter: none !important;
     -webkit-filter: none !important;
     border-radius: 50% !important;
-    margin-bottom: 6pt !important;
+    margin-bottom: 8pt !important;
   }
 
   .sidebar-wrapper .container-block {
-    padding: 7pt 10pt !important;
+    padding: 8pt 12pt !important;
     border-top: 1px solid rgba(255,255,255,0.08) !important;
   }
 
   .sidebar-wrapper .container-block-title {
-    font-size: 7.5pt !important;
-    margin-bottom: 4pt !important;
+    font-size: 8pt !important;
+    margin-bottom: 5pt !important;
     margin-top: 0 !important;
     color: #22d3ee !important;
     text-transform: uppercase;
@@ -116,8 +116,8 @@
   }
 
   .sidebar-wrapper .contact-list li {
-    margin-bottom: 3pt !important;
-    font-size: 6.5pt;
+    margin-bottom: 4pt !important;
+    font-size: 7pt;
     word-break: break-all;
     color: #fff !important;
     line-height: 1.3;
@@ -126,10 +126,10 @@
   .sidebar-wrapper .contact-list .fas,
   .sidebar-wrapper .contact-list .fab,
   .sidebar-wrapper .contact-list .far {
-    font-size: 7.5pt !important;
+    font-size: 8pt !important;
     color: #22d3ee !important;
     width: 12pt;
-    margin-right: 3pt !important;
+    margin-right: 4pt !important;
   }
 
   .sidebar-wrapper a {
@@ -139,11 +139,11 @@
 
   /* Education in sidebar */
   .sidebar-wrapper .education-container .item {
-    margin-bottom: 5pt !important;
+    margin-bottom: 6pt !important;
   }
 
   .sidebar-wrapper .degree {
-    font-size: 7pt !important;
+    font-size: 7.5pt !important;
     color: #fff !important;
     font-weight: 600;
     margin-bottom: 1pt;
@@ -151,7 +151,7 @@
 
   .sidebar-wrapper .education-container .meta,
   .sidebar-wrapper .education-container .time {
-    font-size: 6pt !important;
+    font-size: 6.5pt !important;
     color: rgba(255,255,255,0.55) !important;
     line-height: 1.3;
   }
@@ -166,76 +166,75 @@
 
   .sidebar-wrapper .languages-list li,
   .sidebar-wrapper .interests-list li {
-    margin-bottom: 2pt !important;
-    font-size: 7pt;
+    margin-bottom: 3pt !important;
+    font-size: 7.5pt;
     color: rgba(255,255,255,0.85) !important;
     line-height: 1.3;
   }
 
   .sidebar-wrapper .lang-desc {
-    font-size: 6pt !important;
+    font-size: 6.5pt !important;
     color: rgba(255,255,255,0.5) !important;
   }
 
   /* ========================================
-     MAIN CONTENT — dense, compact
+     MAIN CONTENT
      ======================================== */
   .main-wrapper {
     flex: 1 !important;
     background: #fff !important;
-    padding: 10pt 14pt !important;
+    padding: 12pt 16pt !important;
     overflow: visible !important;
   }
 
   /* Section titles */
   .main-wrapper .section-title {
-    font-size: 9.5pt !important;
-    margin-bottom: 5pt !important;
+    font-size: 10pt !important;
+    margin-bottom: 6pt !important;
     margin-top: 0 !important;
     color: #06b6d4 !important;
     page-break-after: avoid;
     border-bottom: 1px solid #e2e8f0;
-    padding-bottom: 2pt;
+    padding-bottom: 3pt;
     letter-spacing: 0.3pt;
   }
 
   .main-wrapper .section-title .fa-stack {
     font-size: 6pt !important;
-    margin-right: 3pt !important;
+    margin-right: 4pt !important;
   }
 
   /* Sections */
   .main-wrapper .section {
-    margin-bottom: 7pt !important;
-    page-break-inside: avoid;
+    margin-bottom: 10pt !important;
   }
 
-  /* Summary / Career Profile — tighter */
+  /* Summary / Career Profile */
   .main-wrapper .summary {
-    font-size: 7.5pt !important;
-    line-height: 1.35 !important;
+    font-size: 8pt !important;
+    line-height: 1.4 !important;
     color: #444 !important;
   }
 
   .main-wrapper .summary p {
-    margin-bottom: 3pt !important;
+    margin-bottom: 4pt !important;
   }
 
   /* Experience & Education items */
   .main-wrapper .item {
-    margin-bottom: 5pt !important;
+    margin-bottom: 7pt !important;
     page-break-inside: avoid;
   }
 
   .main-wrapper .upper-row {
     display: flex !important;
     justify-content: space-between !important;
-    margin-bottom: 0pt !important;
+    margin-bottom: 1pt !important;
   }
 
   .main-wrapper .job-title,
   .main-wrapper .degree {
-    font-size: 8.5pt !important;
+    font-size: 9pt !important;
     color: #1e293b !important;
     font-weight: 600 !important;
     line-height: 1.3;
@@ -245,7 +244,7 @@
     position: static !important;
     float: none !important;
     color: #64748b !important;
-    font-size: 7pt !important;
+    font-size: 7.5pt !important;
     white-space: nowrap;
     margin-left: auto;
     padding-left: 6pt;
@@ -254,67 +253,62 @@
 
   .main-wrapper .company,
   .main-wrapper .university {
-    font-size: 7pt !important;
+    font-size: 7.5pt !important;
     color: #64748b !important;
     margin-bottom: 2pt !important;
     line-height: 1.3;
   }
 
   .main-wrapper .details {
-    font-size: 7pt !important;
-    line-height: 1.35 !important;
+    font-size: 7.5pt !important;
+    line-height: 1.4 !important;
     color: #444 !important;
   }
 
   .main-wrapper .details p {
-    margin-bottom: 2pt !important;
+    margin-bottom: 3pt !important;
   }
 
   .main-wrapper .details ul {
-    margin: 1pt 0 !important;
-    padding-left: 12pt !important;
+    margin: 2pt 0 !important;
+    padding-left: 14pt !important;
   }
 
   .main-wrapper .details li {
-    margin-bottom: 1pt !important;
-    line-height: 1.3 !important;
+    margin-bottom: 1.5pt !important;
+    line-height: 1.35 !important;
   }
 
-  /* Projects — very compact */
+  /* Projects */
   .main-wrapper .project-title {
-    font-size: 7.5pt !important;
+    font-size: 8pt !important;
     margin-bottom: 0 !important;
   }
 
-  .main-wrapper .project-title a {
-    color: #06b6d4 !important;
-    text-decoration: none !important;
-  }
-
   .main-wrapper .project-tagline {
-    font-size: 6.5pt !important;
+    font-size: 7pt !important;
     color: #666 !important;
     line-height: 1.3;
   }
 
   .main-wrapper .projects-section .item {
-    margin-bottom: 3pt !important;
+    margin-bottom: 4pt !important;
   }
 
   .main-wrapper .projects-section .intro {
-    margin-bottom: 3pt !important;
-    font-size: 7pt !important;
+    margin-bottom: 4pt !important;
+    font-size: 7.5pt !important;
   }
 
-  /* ===== Skills — compact 2-column grid with inline bars ===== */
+  /* ===== Skills — 2-column grid ===== */
   .skillset {
     display: grid !important;
     grid-template-columns: 1fr 1fr !important;
-    gap: 2pt 10pt !important;
+    gap: 3pt 12pt !important;
   }
 
   .skillset .item {
-    margin-bottom: 2pt !important;
+    margin-bottom: 3pt !important;
     overflow: visible !important;
     clear: none !important;
     display: flex !important;
@@ -323,7 +317,7 @@
   }
 
   .skillset .level-title {
-    font-size: 7pt !important;
+    font-size: 7.5pt !important;
     float: none !important;
     width: auto !important;
     min-width: 55pt !important;
@@ -333,7 +327,7 @@
   }
 
   .skillset .level-bar {
-    height: 5pt !important;
+    height: 6pt !important;
     background: #e8e8e8 !important;
     float: none !important;
     width: 100% !important;
@@ -345,7 +339,7 @@
   }
 
   .skillset .level-bar-inner {
-    height: 5pt !important;
+    height: 6pt !important;
     background: #06b6d4 !important;
     border-radius: 2pt !important;
   }
@@ -361,7 +355,7 @@
     color: #ffffff !important;
   }
 
-  /* ===== Links: keep clickable, hide raw URL text ===== */
+  /* ===== Hyperlinks: clickable + visible in PDF ===== */
   a[href]:after {
     content: none !important;
   }
@@ -370,6 +364,7 @@
     color: #06b6d4 !important;
     text-decoration: underline !important;
     text-underline-offset: 1pt !important;
+    cursor: pointer !important;
   }
 
   /* ===== Page break control ===== */
@@ -377,13 +372,16 @@
     page-break-after: avoid !important;
   }
 
+  /* Allow sections to break across pages for proper 3-page flow */
   .section {
-    page-break-inside: avoid;
+    page-break-before: auto;
+    page-break-after: auto;
   }
 
-  /* Keep experience items together */
+  /* Keep individual items together */
   .experiences-section .item,
-  .educations-section .item {
+  .educations-section .item,
+  .projects-section .item {
     page-break-inside: avoid;
   }
 
