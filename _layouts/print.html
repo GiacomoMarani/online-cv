@@ -21,8 +21,24 @@
       border-radius: 0 !important;
       overflow: visible !important;
     }
+    /* Fixed dark strip that covers the full sidebar column
+       on EVERY printed page — Chrome repeats fixed elements */
+    @media print {
+      .print-sidebar-bg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 170pt;
+        background: #0f172a;
+        z-index: -1;
+      }
+    }
   </style>
   <body>
+    <!-- Background strip that repeats on every page -->
+    <div class="print-sidebar-bg"></div>
+
     <div class="wrapper">
       {% include sidebar.html %}
 

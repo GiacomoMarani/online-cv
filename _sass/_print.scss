@@ -6,13 +6,13 @@
 @media print {
 
   /* ───── Page setup ─────
-     margin:0 so the layout bleeds edge-to-edge.
-     The main-wrapper handles its own internal padding for
-     symmetric visual margins on every page.
+     Symmetric margins on every page.
+     Left margin accommodates the sidebar (170pt) so content
+     never bleeds into the physical printable area.
      ───────────────────── */
   @page {
     size: A4;
-    margin: 0;
+    margin: 1cm 0.7cm 1cm 0.7cm;
   }
 
   /* ───── Force colour reproduction ───── */
@@ -81,19 +81,16 @@
     width: 170pt !important;
     min-width: 170pt !important;
     max-width: 170pt !important;
-    background: #0f172a !important;
-    padding: 0.6cm 0 0.6cm 0 !important;
+    /* Background handled by .print-sidebar-bg fixed div in HTML */
+    background: transparent !important;
+    /* Top padding creates breathing room from the page edge */
+    padding: 0.6cm 0 0 0 !important;
     height: auto !important;
     overflow: visible !important;
     font-family: "Segoe UI", Calibri, Arial, Helvetica, sans-serif !important;
     font-size: 7.5pt !important;
     line-height: 1.35 !important;
     color: #fff !important;
-    /* Giant box-shadow extends the dark background
-       infinitely downward, clipped by wrapper overflow:hidden.
-       z-index:0 keeps it below the main-wrapper. */
-    box-shadow: 0 0 0 999cm #0f172a !important;
-    z-index: 0 !important;
   }
 
   /* — Profile header — */
@@ -230,17 +227,14 @@
     display: block !important;
     margin-left: 170pt !important;
     background: #fff !important;
-    /* top & bottom = vertical margin per page,
-       left & right = inner padding from sidebar edge & right edge */
-    padding: 0.6cm 0.7cm 0.6cm 16pt !important;
+    /* Top padding creates breathing room from the page edge.
+       Left/right = inner padding from sidebar edge & page edge */
+    padding: 0.6cm 0.5cm 0.3cm 14pt !important;
     overflow: visible !important;
     font-family: "Segoe UI", Calibri, Arial, Helvetica, sans-serif !important;
     font-size: 8pt !important;
     line-height: 1.45 !important;
     color: #444 !important;
-    /* Sits above the sidebar's box-shadow */
-    position: relative !important;
-    z-index: 1 !important;
   }
 
   /* ───── Section titles (uniform across all sections) ───── */
