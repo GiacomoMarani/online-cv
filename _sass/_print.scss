@@ -1,14 +1,15 @@
 /* =============================================================
-   PRINT STYLESHEET — Coherent 3-page A4 layout
-   Uniform typography · No paragraph cuts · Clean page flow
+   PRINT STYLESHEET — Coherent multi-page A4 layout
+   Uniform typography · Symmetric margins · Full-height sidebar
+   Selectable text with system fonts
    ============================================================= */
 
 @media print {
 
-  /* ───── Page setup: margin 0 to suppress browser headers ───── */
+  /* ───── Page setup: symmetric margins on every page ───── */
   @page {
     size: A4;
-    margin: 0;
+    margin: 0.8cm 0.6cm;
   }
 
   /* ───── Force colour reproduction ───── */
@@ -20,16 +21,20 @@
 
   /* =============================================================
      GLOBAL RESET
+     Use SYSTEM FONTS for print to ensure:
+     - Text is selectable in the PDF
+     - Characters like I and L render correctly
+     - No web-font rasterisation artefacts
      ============================================================= */
   body {
-    font-family: "Inter", Calibri, Arial, sans-serif !important;
+    font-family: "Segoe UI", Calibri, Arial, Helvetica, sans-serif !important;
     font-size: 8.5pt !important;
     line-height: 1.45 !important;
     color: #333 !important;
     background: #fff !important;
-    padding: 0.8cm 0.6cm !important;
+    padding: 0 !important;
     margin: 0 !important;
-    -webkit-font-smoothing: antialiased;
+    -webkit-font-smoothing: subpixel-antialiased;
   }
 
   /* ───── Hide interactive / UI elements ───── */
@@ -44,8 +49,7 @@
      LAYOUT WRAPPER
      ============================================================= */
   .wrapper {
-    display: flex !important;
-    flex-direction: row !important;
+    display: block !important;
     max-width: unset !important;
     width: 100% !important;
     margin: 0 !important;
@@ -54,28 +58,29 @@
     border: none !important;
     border-radius: 0 !important;
     overflow: visible !important;
+    background: transparent !important;
+    position: relative !important;
   }
 
   /* =============================================================
      SIDEBAR  (left column, dark background)
-     All sidebar text uses the same 7.5pt base.
+     Uses position:fixed to make it appear on EVERY printed page,
+     spanning the full page height creating a continuous column.
      ============================================================= */
   .sidebar-wrapper {
-    position: static !important;
-    display: block !important;
-    float: none !important;
-    order: -1 !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    bottom: 0 !important;
     width: 170pt !important;
-    min-width: 170pt !important;
-    max-width: 170pt !important;
-    flex-shrink: 0 !important;
     background: #0f172a !important;
     padding: 0 !important;
-    height: auto !important;
     overflow: visible !important;
+    font-family: "Segoe UI", Calibri, Arial, Helvetica, sans-serif !important;
     font-size: 7.5pt !important;
     line-height: 1.35 !important;
     color: #fff !important;
+    z-index: 1 !important;
   }
 
   /* — Profile header — */
@@ -100,6 +105,7 @@
     color: #fff !important;
     margin: 0 0 3pt 0 !important;
     line-height: 1.2 !important;
+    font-family: "Segoe UI", Calibri, Arial, Helvetica, sans-serif !important;
   }
 
   .sidebar-wrapper .tagline {
@@ -204,13 +210,14 @@
 
   /* =============================================================
      MAIN CONTENT  (right column, white background)
-     Uniform base: 8pt text, 1.45 line-height, #444 body color
+     Offset by the sidebar width to avoid overlap.
      ============================================================= */
   .main-wrapper {
-    flex: 1 !important;
+    margin-left: 170pt !important;
     background: #fff !important;
     padding: 12pt 16pt !important;
     overflow: visible !important;
+    font-family: "Segoe UI", Calibri, Arial, Helvetica, sans-serif !important;
     font-size: 8pt !important;
     line-height: 1.45 !important;
     color: #444 !important;
@@ -228,6 +235,7 @@
     margin: 0 0 7pt 0 !important;
     line-height: 1.3 !important;
     page-break-after: avoid !important;
+    font-family: "Segoe UI", Calibri, Arial, Helvetica, sans-serif !important;
   }
 
   .main-wrapper .section-title .fa-stack {
