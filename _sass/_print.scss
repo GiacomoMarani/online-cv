@@ -1,15 +1,18 @@
 /* =============================================================
    PRINT STYLESHEET — Coherent multi-page A4 layout
-   Uniform typography · Symmetric margins · Full-height sidebar
-   Selectable text with system fonts
+   Full-height sidebar · Symmetric page margins · Selectable text
    ============================================================= */
 
 @media print {
 
-  /* ───── Page setup: symmetric margins on every page ───── */
+  /* ───── Page setup ─────
+     margin:0 so the layout bleeds edge-to-edge.
+     The main-wrapper handles its own internal padding for
+     symmetric visual margins on every page.
+     ───────────────────── */
   @page {
     size: A4;
-    margin: 0.8cm 0.6cm;
+    margin: 0;
   }
 
   /* ───── Force colour reproduction ───── */
@@ -21,7 +24,7 @@
 
   /* =============================================================
      GLOBAL RESET
-     Use SYSTEM FONTS for print to ensure:
+     System fonts so that:
      - Text is selectable in the PDF
      - Characters like I and L render correctly
      - No web-font rasterisation artefacts
@@ -47,6 +50,9 @@
 
   /* =============================================================
      LAYOUT WRAPPER
+     Two-column flex. The wrapper carries the sidebar dark colour
+     as its own background so the left column is always dark
+     even when the sidebar content ends.
      ============================================================= */
   .wrapper {
     display: block !important;
@@ -57,30 +63,37 @@
     box-shadow: none !important;
     border: none !important;
     border-radius: 0 !important;
-    overflow: visible !important;
-    background: transparent !important;
+    overflow: hidden !important;
+    background: #fff !important;
     position: relative !important;
   }
 
   /* =============================================================
      SIDEBAR  (left column, dark background)
-     Uses position:fixed to make it appear on EVERY printed page,
-     spanning the full page height creating a continuous column.
+     Static positioning — the dark background comes from the
+     wrapper, so even when sidebar content ends the left strip
+     stays dark on every page.
      ============================================================= */
   .sidebar-wrapper {
-    position: fixed !important;
-    top: 0 !important;
-    left: 0 !important;
-    bottom: 0 !important;
+    position: relative !important;
+    display: block !important;
+    float: left !important;
     width: 170pt !important;
+    min-width: 170pt !important;
+    max-width: 170pt !important;
     background: #0f172a !important;
-    padding: 0 !important;
+    padding: 0.6cm 0 0.6cm 0 !important;
+    height: auto !important;
     overflow: visible !important;
     font-family: "Segoe UI", Calibri, Arial, Helvetica, sans-serif !important;
     font-size: 7.5pt !important;
     line-height: 1.35 !important;
     color: #fff !important;
-    z-index: 1 !important;
+    /* Giant box-shadow extends the dark background
+       infinitely downward, clipped by wrapper overflow:hidden.
+       z-index:0 keeps it below the main-wrapper. */
+    box-shadow: 0 0 0 999cm #0f172a !important;
+    z-index: 0 !important;
   }
 
   /* — Profile header — */
@@ -210,17 +223,24 @@
 
   /* =============================================================
      MAIN CONTENT  (right column, white background)
-     Offset by the sidebar width to avoid overlap.
+     Its own white background covers the wrapper's dark bg.
+     Padding creates the symmetric visual margins on every page.
      ============================================================= */
   .main-wrapper {
+    display: block !important;
     margin-left: 170pt !important;
     background: #fff !important;
-    padding: 12pt 16pt !important;
+    /* top & bottom = vertical margin per page,
+       left & right = inner padding from sidebar edge & right edge */
+    padding: 0.6cm 0.7cm 0.6cm 16pt !important;
     overflow: visible !important;
     font-family: "Segoe UI", Calibri, Arial, Helvetica, sans-serif !important;
     font-size: 8pt !important;
     line-height: 1.45 !important;
     color: #444 !important;
+    /* Sits above the sidebar's box-shadow */
+    position: relative !important;
+    z-index: 1 !important;
   }
 
   /* ───── Section titles (uniform across all sections) ───── */
