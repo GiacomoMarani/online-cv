@@ -12,7 +12,7 @@
      ───────────────────── */
   @page {
     size: A4;
-    margin: 1cm 0.7cm 1cm 0.7cm;
+    margin: 0;
   }
 
   /* ───── Force colour reproduction ───── */
@@ -83,13 +83,16 @@
     max-width: 170pt !important;
     background: #0f172a !important;
     /* Top padding creates breathing room from the page edge */
-    padding: 0.6cm 0 0 0 !important;
+    padding: 0.6cm 0 0.6cm 0 !important;
     height: auto !important;
     overflow: visible !important;
     font-family: "Segoe UI", Calibri, Arial, Helvetica, sans-serif !important;
     font-size: 7.5pt !important;
     line-height: 1.35 !important;
     color: #fff !important;
+    /* Extend dark bg infinitely so it covers the full page height */
+    box-shadow: 0 0 0 999cm #0f172a !important;
+    z-index: 0 !important;
   }
 
   /* — Profile header — */
@@ -228,12 +231,15 @@
     background: #fff !important;
     /* Top padding creates breathing room from the page edge.
        Left/right = inner padding from sidebar edge & page edge */
-    padding: 0.6cm 0.5cm 0.3cm 14pt !important;
+    padding: 0.6cm 0.7cm 0.6cm 16pt !important;
     overflow: visible !important;
     font-family: "Segoe UI", Calibri, Arial, Helvetica, sans-serif !important;
     font-size: 8pt !important;
     line-height: 1.45 !important;
     color: #444 !important;
+    /* Stay above sidebar's box-shadow */
+    position: relative !important;
+    z-index: 1 !important;
   }
 
   /* ───── Section titles (uniform across all sections) ───── */
