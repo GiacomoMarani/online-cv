@@ -6,13 +6,11 @@
 @media print {
 
   /* ───── Page setup ─────
-     Symmetric margins on every page.
-     Left margin accommodates the sidebar (170pt) so content
-     never bleeds into the physical printable area.
+     Modest margins keep content away from page edges.
      ───────────────────── */
   @page {
     size: A4;
-    margin: 0;
+    margin: 0.6cm 0;
   }
 
   /* ───── Force colour reproduction ───── */
@@ -43,6 +41,7 @@
   /* ───── Hide interactive / UI elements ───── */
   .download-bar,
   .lang-toggle,
+  .lang-toggle.container-block,
   footer,
   .footer {
     display: none !important;
@@ -82,16 +81,17 @@
     min-width: 170pt !important;
     max-width: 170pt !important;
     background: #0f172a !important;
-    /* Top padding creates breathing room from the page edge */
-    padding: 0.6cm 0 0.6cm 0 !important;
+    /* Vertical padding matches @page top/bottom margin (0.6cm) */
+    padding: 0 0.6cm 0 0.8cm !important;
     height: auto !important;
     overflow: visible !important;
     font-family: "Segoe UI", Calibri, Arial, Helvetica, sans-serif !important;
     font-size: 7.5pt !important;
     line-height: 1.35 !important;
     color: #fff !important;
-    /* Extend dark bg infinitely so it covers the full page height */
+    /* Extend dark bg to fill full page height on every page */
     box-shadow: 0 0 0 999cm #0f172a !important;
+    clip-path: none !important;
     z-index: 0 !important;
   }
 
