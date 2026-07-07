@@ -5,34 +5,40 @@
 
 @media print {
 
-  /* ───── Page setup ─────
-     Modest margins keep content away from page edges.
-     ───────────────────── */
-  @page {
-    size: A4;
-    margin: 0.6cm 0;
+  /* ───────────────────────────────────────────────────────────
+     TWO-COLUMN BACKGROUND
+     A hard-stop gradient on <html> creates the dark sidebar
+     strip on the left and the white main area on the right.
+     <html> always spans the full document height on every page,
+     so both columns are filled with no gaps, no tricks.
+  ─────────────────────────────────────────────────────────── */
+  html {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    background: linear-gradient(to right, #0f172a 170pt, #ffffff 170pt) !important;
   }
 
-  /* ───── Force colour reproduction ───── */
+  /* ───── Force colour reproduction everywhere ───── */
   * {
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
     color-adjust: exact !important;
   }
 
+  @page {
+    size: A4;
+    margin: 0.6cm 0;
+  }
+
   /* =============================================================
      GLOBAL RESET
-     System fonts so that:
-     - Text is selectable in the PDF
-     - Characters like I and L render correctly
-     - No web-font rasterisation artefacts
-     ============================================================= */
+  ============================================================= */
   body {
     font-family: "Segoe UI", Calibri, Arial, Helvetica, sans-serif !important;
     font-size: 8.5pt !important;
     line-height: 1.45 !important;
     color: #333 !important;
-    background: #fff !important;
+    background: transparent !important;
     padding: 0 !important;
     margin: 0 !important;
     -webkit-font-smoothing: subpixel-antialiased;
@@ -48,11 +54,8 @@
   }
 
   /* =============================================================
-     LAYOUT WRAPPER
-     Two-column flex. The wrapper carries the sidebar dark colour
-     as its own background so the left column is always dark
-     even when the sidebar content ends.
-     ============================================================= */
+     LAYOUT WRAPPER — transparent, full width
+  ============================================================= */
   .wrapper {
     display: block !important;
     max-width: unset !important;
@@ -63,16 +66,13 @@
     border: none !important;
     border-radius: 0 !important;
     overflow: visible !important;
-    background: #fff !important;
+    background: transparent !important;
     position: relative !important;
   }
 
   /* =============================================================
-     SIDEBAR  (left column, dark background)
-     Static positioning — the dark background comes from the
-     wrapper, so even when sidebar content ends the left strip
-     stays dark on every page.
-     ============================================================= */
+     SIDEBAR — transparent background (html gradient shows through)
+  ============================================================= */
   .sidebar-wrapper {
     position: relative !important;
     display: block !important;
@@ -80,8 +80,7 @@
     width: 170pt !important;
     min-width: 170pt !important;
     max-width: 170pt !important;
-    background: #0f172a !important;
-    /* Vertical padding matches @page top/bottom margin */
+    background: transparent !important;
     padding: 0 0.6cm 0 0.8cm !important;
     height: auto !important;
     overflow: visible !important;
@@ -89,9 +88,7 @@
     font-size: 7.5pt !important;
     line-height: 1.35 !important;
     color: #fff !important;
-    /* Sit above the fixed background strips */
-    position: relative !important;
-    z-index: 2 !important;
+    z-index: 1 !important;
   }
 
   /* — Profile header — */
@@ -220,10 +217,8 @@
   }
 
   /* =============================================================
-     MAIN CONTENT  (right column, white background)
-     Its own white background covers the wrapper's dark bg.
-     Padding creates the symmetric visual margins on every page.
-     ============================================================= */
+     MAIN CONTENT — transparent (html gradient white area shows through)
+  ============================================================= */
   .main-wrapper {
     display: block !important;
     margin-left: 170pt !important;
@@ -234,9 +229,8 @@
     font-size: 8pt !important;
     line-height: 1.45 !important;
     color: #444 !important;
-    /* Sit above both fixed background strips */
     position: relative !important;
-    z-index: 2 !important;
+    z-index: 1 !important;
   }
 
   /* ───── Section titles (uniform across all sections) ───── */

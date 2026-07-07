@@ -10,7 +10,7 @@
   <!--<![endif]-->
   {% include head.html %}
   <style>
-    /* Print layout overrides — remove screen decorations */
+    /* Screen overrides — remove decorations that don't belong in print layout */
     body {
       padding: 0 !important;
       margin: 0 !important;
@@ -21,37 +21,8 @@
       border-radius: 0 !important;
       overflow: visible !important;
     }
-    /* Fixed dark strip that covers the full sidebar column
-       on EVERY printed page — Chrome repeats fixed elements */
-    @media print {
-      /* Dark background — full left column, every page */
-      .print-sidebar-bg {
-        position: fixed;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        width: 170pt;
-        background: #0f172a;
-        z-index: 0;
-      }
-      /* White background — full right column, every page */
-      .print-main-bg {
-        position: fixed;
-        top: 0;
-        left: 170pt;
-        right: 0;
-        bottom: 0;
-        background: #fff;
-        z-index: 1;
-      }
-    }
   </style>
   <body>
-    <!-- Dark strip: repeats on every page covering the full sidebar column -->
-    <div class="print-sidebar-bg"></div>
-    <!-- White strip: repeats on every page covering the full main column -->
-    <div class="print-main-bg"></div>
-
     <div class="wrapper">
       {% include sidebar.html %}
 
