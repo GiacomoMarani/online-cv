@@ -160,6 +160,19 @@ skills:
     - name: "CSS"
       level: 40%
 
+certifications:
+  title: "Certifications"
+  list:
+    - name: "Generative AI Leader"
+      start: "Jul 2026"
+      organization: "GAIL — Generative AI Leadership"
+      credentialid: "142eb5d5-69db-45de-948e-003aefe24e53"
+      credentialurl: "www.credly.com/badges/142eb5d5-69db-45de-948e-003aefe24e53/public_url"
+      credentialname: "View on Credly"
+      details: |
+        Professional certification recognizing expertise in Generative AI strategy,
+        leadership, and applied implementation across enterprise contexts.
+
 footer: >
   DM on
   <a href="https://www.linkedin.com/in/giacomo-marani-3a4532121/" target="_blank" rel="nofollow">Linkedin</a>
