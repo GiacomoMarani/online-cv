@@ -169,9 +169,9 @@ certifications:
       credentialid: "142eb5d5-69db-45de-948e-003aefe24e53"
       credentialurl: "www.credly.com/badges/142eb5d5-69db-45de-948e-003aefe24e53/public_url"
       credentialname: "Visualizza su Credly"
+      badgeimage: "assets/Certification/GAIL/generative-ai-leader-certification.png"
       details: |
-        Certificazione professionale che riconosce competenze in strategia,
-        leadership e implementazione applicata dell’AI generativa in contesti aziendali.
+        A Generative AI Leader is a visionary professional with comprehensive knowledge of how gen AI can transform businesses. They have business-level knowledge of Google Cloud's gen AI offerings and understand how Google's AI-first approach can lead organizations toward innovative and responsible AI adoption. They influence gen AI-powered initiatives and identify opportunities across business functions and industries, using Google Cloud's enterprise-ready offerings to accelerate innovation.
 
 footer: >
   DM su

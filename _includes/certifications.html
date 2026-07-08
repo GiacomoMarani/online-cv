@@ -9,30 +9,28 @@
     {{ certifications.title }}
   </h2>
 
-  {% for certifications in certifications.list %}
+  {% for cert in certifications.list %}
   <div class="item">
     <div class="meta">
       <div class="upper-row">
-        <h3 class="cert-title">{{ certifications.name }}</h3>
+        <h3 class="cert-title">{{ cert.name }}</h3>
         <div class="time">
-          {{ certifications.start }} {% if certifications.end %} - {{
-          certifications.end }} {% endif %}
+          {{ cert.start }} {% if cert.end %} - {{ cert.end }} {% endif %}
         </div>
       </div>
       <!--//upper-row-->
 
       <div class="second-upper-row">
         <div class="cert-org">
-          {{ certifications.organization }} {% if certifications.credentialid %}
-          ({{ certifications.credentialid }}) {% endif %}
+          {{ cert.organization }}
         </div>
-        {% if certifications.credentialurl %}
+        {% if cert.credentialurl %}
         <div class="cert-url">
           <a
-            href="//{{ certifications.credentialurl }}"
+            href="//{{ cert.credentialurl }}"
             target="_blank"
             rel="noreferrer nofollow noopener"
-            >{{ certifications.credentialname }}</a
+            >{{ cert.credentialname }}</a
           >
         </div>
         {% endif %}
@@ -40,7 +38,17 @@
     </div>
     <!--//meta-->
 
-    <div class="details">{{ certifications.details | markdownify }}</div>
+    <div class="cert-body">
+      {% if cert.badgeimage %}
+      <div class="cert-badge">
+        <a href="//{{ cert.credentialurl }}" target="_blank" rel="noreferrer nofollow noopener">
+          <img src="{{ cert.badgeimage | relative_url }}" alt="{{ cert.name }} badge" />
+        </a>
+      </div>
+      {% endif %}
+      <div class="details">{{ cert.details | markdownify }}</div>
+    </div>
+    <!--//cert-body-->
   </div>
   <!--//item-->
   {% endfor %}
