@@ -425,3 +425,24 @@ p {
   cursor: default;
 }
 
+/* ======= Certifications Badge ======= */
+.cert-body {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+
+  .cert-badge {
+    flex-shrink: 0;
+
+    img {
+      width: 100px;
+      height: auto;
+      display: block;
+    }
+  }
+
+  .details {
+    flex: 1;
+  }
+}
+
