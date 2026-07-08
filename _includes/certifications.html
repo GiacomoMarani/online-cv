@@ -38,15 +38,15 @@
     </div>
     <!--//meta-->
 
-    <div class="cert-body">
+    <div class="cert-body" style="display:flex; align-items:flex-start; gap:16px; margin-top:8px;">
       {% if cert.badgeimage %}
-      <div class="cert-badge">
+      <div class="cert-badge" style="flex-shrink:0;">
         <a href="//{{ cert.credentialurl }}" target="_blank" rel="noreferrer nofollow noopener">
-          <img src="{{ cert.badgeimage | relative_url }}" alt="{{ cert.name }} badge" />
+          <img src="{{ cert.badgeimage | relative_url }}" alt="{{ cert.name }} badge" style="width:110px; height:auto; display:block;" />
         </a>
       </div>
       {% endif %}
-      <div class="details">{{ cert.details | markdownify }}</div>
+      <div class="details" style="flex:1;">{{ cert.details | markdownify }}</div>
     </div>
     <!--//cert-body-->
   </div>
